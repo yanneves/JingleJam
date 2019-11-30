@@ -1,0 +1,35 @@
+{
+    "lewis": {
+        "displayName": "Lewis",
+        "profilePicture": "https://i.imgur.com/vpxkkI7.jpg",
+        "socialMedia": {
+            "twitter": "https://twitter.com/YogscastLewis",
+            "youtube": "https://www.youtube.com/user/BlueXephos",
+            "facebook": "https://www.facebook.com/lewisxephos",
+            "twitch": "https://www.twitch.tv/yogscast",
+            "reddit": "https://www.reddit.com/user/LewisXephos"
+        }
+    },
+    "simon": {
+        "displayName": "Simon",
+        "profilePicture": "https://i.imgur.com/vpxkkI7.jpg",
+        "socialMedia": {
+            "twitter": "https://twitter.com/SimonHoneydew",
+            "youtube": "https://www.youtube.com/user/BlueXephos",
+            "facebook": "https://www.facebook.com/SimonHoneydew",
+            "twitch": "https://www.twitch.tv/yogscast",
+            "reddit": "https://www.reddit.com/user/SimonHoneydew"
+        }
+    },
+    "duncan": {
+        "displayName": "Duncan",
+        "profilePicture": "https://i.imgur.com/mOiwRfX.jpg",
+        "socialMedia": {
+            "twitter": "https://twitter.com/YogscastLalna",
+            "youtube": "https://www.youtube.com/user/Yogscastlalna",
+            "facebook": "https://www.facebook.com/yogscastlalna",
+            "twitch": "https://www.twitch.tv/lalna",
+            "reddit": "http://www.reddit.com/user/Yogscastlalna"
+        }
+    }
+}

@@ -22,3 +22,70 @@ img {
 * {
   font-weight: normal;
 }
+
+.modal {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.modal.loading {
+  z-index: 2000;
+  opacity: 1;
+  transition: .2s ease-in-out;
+}
+.modal.loading.hidden {
+  opacity: 0;
+}
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #081633;
+  opacity: 0.8;
+  z-index: 1000;
+}
+.modalBackdrop.loading {
+  z-index: 2000;
+  opacity: 1;
+}
+.modalContent {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  z-index: 1001;
+}
+.modalContent.loading {
+  z-index: 2001;
+}
+
+.pinkLogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 200px;
+  width: auto;
+  animation-name: logoLoading;
+  animation-duration: 1.7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  
+}
+
+@keyframes logoLoading {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(0.95);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
