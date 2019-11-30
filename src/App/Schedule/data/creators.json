@@ -31,5 +31,101 @@
             "twitch": "https://www.twitch.tv/lalna",
             "reddit": "http://www.reddit.com/user/Yogscastlalna"
         }
+    },
+    "sips": {
+        "displayName": "sips",
+        "profilePicture": "https://i.imgur.com/JlNLqJG.jpg"
+    },
+    "kim": {
+        "displayName": "Kim",
+        "profilePicture": "https://i.imgur.com/oiSl9db.jpg"
+    },
+    "inthelittlewood": {
+        "displayName": "InTheLittleWood",
+        "profilePicture": "https://i.imgur.com/fFzReSy.jpg"
+    },
+    "tom": {
+        "displayName": "Tom",
+        "profilePicture": "https://i.imgur.com/ixU5sBJ.jpg"
+    },
+    "ben": {
+        "displayName": "Ben",
+        "profilePicture": "https://i.imgur.com/MSPIkpr.jpg"
+    },
+    "bouphe": {
+        "displayName": "Bouphe",
+        "profilePicture": "https://i.imgur.com/b2xzZMl.jpg"
+    },
+    "lydia": {
+        "displayName": "Lydia",
+        "profilePicture": "https://i.imgur.com/rrmDAOE.jpg"
+    },
+    "spiff": {
+        "displayName": "The Spiffing Brit",
+        "profilePicture": "https://i.imgur.com/PDWv6Oa.jpg"
+    },
+    "hatfilms": {
+        "displayName": "Hat Films",
+        "profilePicture": "https://i.imgur.com/LuiPsXP.jpg"
+    },
+    "sam": {
+        "displayName": "Sam",
+        "profilePicture": "https://i.imgur.com/EzdY7hk.jpg"
+    },
+    "rtgame": {
+        "displayName": "RTGame",
+        "profilePicture": "https://i.imgur.com/BPb66WW.jpg"
+    },
+    "pedguin": {
+        "displayName": "Pedguin",
+        "profilePicture": "https://i.imgur.com/jdHjviL.jpg"
+    },
+    "leo": {
+        "displayName": "Leo",
+        "profilePicture": "https://i.imgur.com/Xg2FWvl.jpg"
+    },
+    "rythian": {
+        "displayName": "Rythian",
+        "profilePicture": "https://i.imgur.com/0AxAIQq.jpg"
+    },
+    "mousie": {
+        "displayName": "Mousie",
+        "profilePicture": "https://i.imgur.com/cIRdiv5.png"
+    },
+    "daltos": {
+        "displayName": "Daltos",
+        "profilePicture": "https://i.imgur.com/AN7qKwI.jpg"
+    },
+    "ravs": {
+        "displayName": "Ravs",
+        "profilePicture": "https://i.imgur.com/n7Qdnwx.png"
+    },
+    "geestar": {
+        "displayName": "Geestar",
+        "profilePicture": "https://i.imgur.com/lbLlWwh.png"
+    },
+    "nilesy": {
+        "displayName": "Nilesy",
+        "profilePicture": "https://i.imgur.com/eHZOSKs.jpg"
+    },
+    "zylus": {
+        "displayName": "Zylus",
+        "profilePicture": "https://i.imgur.com/TRYwdCX.png"
+    },
+    "panda": {
+        "displayName": "Panda",
+        "profilePicture": "https://i.imgur.com/lGrh77t.jpg"
+    },
+    "rambler": {
+        "displayName": "Alex The Rambler",
+        "profilePicture": "https://i.imgur.com/nNIFm8r.jpg"
+    },
+    "harry": {
+        "displayName": "Harry",
+        "profilePicture": "https://i.imgur.com/B9Vd68J.jpg"
+    },
+    "pyrion": {
+        "displayName": "Pyrion Flax",
+        "profilePicture": "https://i.imgur.com/mM8ehyJ.jpg"
     }
 }

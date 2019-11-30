@@ -86,6 +86,18 @@ html, body {
             grid-gap: 10px;
             box-sizing: border-box;
             margin-bottom: 50px;
+            position: relative;
+            .liveTime {
+                position: absolute;
+                height: 3px;
+                width: 55px;
+                background: #f04a1a;
+                opacity: 0;
+                z-index: 50;
+                &.active {
+                    opacity: 1;
+                }
+            }
             .time {
                 background: #ffffff;
                 grid-column: 1;
@@ -129,6 +141,9 @@ html, body {
                     font-size: 1.2rem;
                     margin-top: 5px;
                 }
+                &.time {
+                    font-size: 1rem;
+                }
             }
             ._1 {
                 grid-column: 2;
@@ -158,11 +173,28 @@ html, body {
                 align-items: center;
                 justify-content: center;
                 cursor: pointer;
+                padding: 10px;
+                text-align: center;
+                transition: .2s ease;
                 h1 {
                     margin: 0;
+                    font-size: 2rem;
+                    line-height: 1.7rem;
+                    margin-bottom: 15px;
                 }
-                h4 {
+                h4, h5 {
                     margin: 0;
+                    font-size: 1.5rem;
+                    line-height: 1.4rem;
+                }
+                h5 {
+                    margin-top: 10px;
+                }
+                h3 {
+                    font-size: 1.5rem;
+                    line-height: 1.4rem;
+                    margin: 0;
+                    margin-bottom: 10px;
                 }
 
                 &.duration_1 {
@@ -182,6 +214,9 @@ html, body {
                     background: #005491;
                     border: 4px solid #4593d1;
                     color: #ffffff;
+                    h1, h4, h5, h3 {
+                        text-shadow: 0 0 7px #000000;
+                    }
                 }
                 &.white {
                     background: #ffffff;
@@ -195,6 +230,252 @@ html, body {
                     &.duration_4 {
                         background: rgb(166,17,59);
                         background: linear-gradient(0deg, rgba(166,17,59,1) 0%, rgba(220,23,79,1) 50%, rgba(166, 17, 59, 1) 100%);
+                    }
+                    h1, h4, h5, h3 {
+                        text-shadow: 0 0 7px #000000;
+                    }
+                }
+            }
+            pointer-events: none;
+            & > .stream {
+                pointer-events: auto;
+            }
+            &:hover > .stream {
+                opacity: 0.7;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .expanded {
+        position: absolute;
+        z-index: 100;
+        height: 100vh;
+        width: 100%;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        top: 0;
+        left: 0;
+        .bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: 100;
+            background: #000000;
+            opacity: 0.6;
+        }
+        .content {
+            width: 1200px;
+            height: 410px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            z-index: 101;
+            box-shadow: 0 0 25px 0 rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: row;
+            &.blue {
+                background: #005491;
+                border: 4px solid #4593d1;
+                color: #ffffff;
+            }
+            &.pink {
+                border: 4px solid #9a0a2e;
+                color: #ffffff;
+                background: rgb(166,17,59);
+                background: linear-gradient(0deg, rgba(166,17,59,1) 0%, rgba(220,23,79,1) 50%, rgba(166, 17, 59, 1) 100%);
+            }
+            &.white {
+                background: #ffffff;
+                color: #064372;
+            }
+            .details {
+                height: 100%;
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                box-sizing: border-box;
+                padding: 25px;
+                h1 {
+                    font-size: 4rem;
+                    margin: 0;
+                    line-height: 3.5rem;
+                    margin-bottom: 30px;
+                }
+                h3, h4, h5 {
+                    font-size: 2rem;
+                    margin: 0;
+                    line-height: 1.8rem;
+                }
+                .starring {
+                    height: 75px;
+                    max-width: 100%;
+                    overflow-x: scroll;
+                    position: relative;
+                    margin-top: 25px;
+                    display: flex;
+                    flex-direction: row;
+                    padding: 0 10px;
+                    .yog {
+                        height: 50px;
+                        width: 50px;
+                        border-radius: 50%;
+                        background: rgba(255,255,255,0.2);
+                        flex-shrink: 0;
+                        margin: 0 5px;
+                        position: relative;
+                        cursor: pointer;
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            border-radius: 50%;
+                        }
+                        .tooltip {
+                            pointer-events: none;
+                            opacity: 0;
+                            position: absolute;
+                            white-space: nowrap;
+                            top: calc(100% + 5px);
+                            left: 50%;
+                            transform: translate(-50%, 0);
+                            background: #ffffff;
+                            color: rgb(166,17,59);
+                            padding: 0 10px;
+                            height: 20px;
+                            border-radius: 10px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 1rem;
+                            transition: .2s ease;
+                        }
+                        &:hover {
+                            .tooltip {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+            &.white {
+                .details {
+                    .starring {
+                        .yog {
+                            background: rgba(0,0,0,.1);
+                            .tooltip {
+                                background: #064372;
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+            &.blue {
+                .details {
+                    .starring {
+                        .yog {
+                            .tooltip {
+                                color: #005491;
+                            }
+                        }
+                    }
+                }
+            }
+            .vods {
+                height: 100%;
+                width: 50%;
+                display: flex;
+                align-items: center;
+                padding: 25px;
+                box-sizing: border-box;
+                justify-content: center;
+                .countdown {
+                    h2 {
+                        margin: 0;
+                        line-height: 1.5rem;
+                        font-size: 2rem;
+                    }
+                    h1 {
+                        margin: 0;
+                        font-size: 4rem;
+                        line-height: 4rem;
+                        span {
+                            position: relative;
+                            &::after {
+                                content: attr(data-tooltip);
+                                font-size: 1rem;
+                                position: absolute;
+                                height: 20px;
+                                padding: 0 10px;
+                                border-radius: 10px;
+                                top: calc(100% - 5px);
+                                line-height: 1rem;
+                                left: 50%;
+                                transform: translate(-50%, 0);
+                            }
+                        }
+                    }
+                }
+                .live {
+                    display: flex;
+                    flex-direction: column;
+                    h1 {
+                        margin: 0;
+                        text-align: right;
+                        font-size: 3rem;
+                        margin-top: 5px;
+                    }
+                }
+                .novods {
+                    font-size: 1.5rem;
+                }
+                .allvods {
+                    display: flex;
+                    flex-direction: column;
+                    ul {
+                        list-style: none;
+                        display: flex;
+                        flex-direction: row;
+                        height: 40px;
+                        padding: 0;
+                        margin: 0;
+                        margin-top: 10px;
+                        overflow: hidden;
+                        li {
+                            display: flex;
+                            flex-grow: 1;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 0;
+                            margin: 0;
+                            font-size: 1.3rem;
+                            border: 2px solid #ffffff;
+                            box-sizing: border-box;
+                            cursor: pointer;
+                            transition: .2s ease;
+                            &:first-child {
+                                margin-right: 5px;
+                            }
+                            &:last-child {
+                                margin-left: 5px;
+                            }
+                            svg {
+                                margin-left: 5px;
+                            }
+                            &.twitch:hover, &.twitch.active {
+                                background: #6441a5;
+                                color: #ffffff;
+                            }
+                            &.youtube:hover, &.youtube.active {
+                                color: #ffffff;
+                                background: #c4302b;
+                            }
+                        }
                     }
                 }
             }

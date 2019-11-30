@@ -2,27 +2,24 @@ import React, {Component} from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import {Switch} from 'react-router';
 
-import {Home} from './Schedule';
+import {Home, ExpandedStream} from './Schedule';
 
 import pinkLogo from './Schedule/logo_pink.png';
 
 class App extends Component {
     constructor(){
         super();
-        this.state = {
-            modal: null,
-            loading: true,
-            loadingHidden: false
+        var loading = true;
+        var loadingHidden = false;
+        if (localStorage.getItem("cache")){
+            loading = false;
+            loadingHidden = true;
         }
-        this.openModal = this.openModal.bind(this);
-        this.closeModal = this.closeModal.bind(this);
+        this.state = {
+            loading,
+            loadingHidden
+        }
         this.toggleLoading = this.toggleLoading.bind(this);
-    }
-    openModal(modal){
-        this.setState({modal});
-    }
-    closeModal(){
-        this.setState({modal: null});
     }
     toggleLoading(){
         const loading = this.state.loading;
@@ -54,20 +51,12 @@ class App extends Component {
         }
     }
     render(){
-        const Modal = this.state.modal;
         return(
             <Router>
+                <Home toggleLoading={this.toggleLoading} />
                 <Switch>
-                    <Route path="/" render={(props) => <Home openModal={this.openModal} closeModal={this.closeModal} toggleLoading={this.toggleLoading} />} />
+                    <Route path="/stream/:streamid" exact render={(props) => <ExpandedStream {...props} />} />
                 </Switch>
-                {
-                    this.state.modal !== null ?
-                    <div className="modal">
-                        <div className="modalBackdrop" onClick={this.closeModal}></div>
-                        <div className="modalContent"><Modal openModal={this.openModal} closeModal={this.closeModal} toggleLoading={this.toggleLoading} /></div>
-                    </div>
-                    : null
-                }
                 {
                     this.state.loading ?
                     <div className={this.state.loadingHidden ? "modal loading hidden" : "modal loading"}>

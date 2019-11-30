@@ -2,7 +2,8 @@
     "weeks": [
         {
             "meta": {
-                "active": true
+                "active": true,
+                "week": 1
             },
             "days": [
                 {
@@ -15,16 +16,16 @@
                             "starring": [],
                             "duration": 1,
                             "style": "blue",
-                            "vods": []
+                            "vods": {}
                         },
                         {
                             "title": "jingle jam warm up",
-                            "subtitle": "time and ben",
+                            "subtitle": "tom and ben",
                             "startHour": 14,
                             "starring": ["tom", "ben"],
                             "duration": 1,
                             "style": "white",
-                            "vods": []
+                            "vods": {}
                         },
                         {
                             "title": "jingle cats & launch",
@@ -33,7 +34,7 @@
                             "starring": ["lewis", "simon"],
                             "duration": 1,
                             "style": "pink",
-                            "vods": []
+                            "vods": {}
                         },
                         {
                             "title": "trains and chill",
@@ -42,7 +43,7 @@
                             "starring": ["lewis", "duncan"],
                             "duration": 1,
                             "style": "blue",
-                            "vods": []
+                            "vods": {}
                         }
                     ]
                 },
@@ -50,13 +51,13 @@
                     "date": 2,
                     "streams": [
                         {
-                            "title": "baubles with boupe and lydia",
+                            "title": "baubles\nwith bouphe\nand lydia",
                             "subtitle": "and more",
                             "startHour": 11,
                             "starring": ["bouphe", "lydia"],
                             "duration": 1,
                             "style": "blue",
-                            "vods": []
+                            "vods": {}
                         },
                         {
                             "title": "feed a cow for christmas",
@@ -66,16 +67,16 @@
                             "starring": ["lewis", "duncan", "ben", "spiff"],
                             "duration": 1,
                             "style": "pink",
-                            "vods": []
+                            "vods": {}
                         },
                         {
                             "title": "hat films christmas album",
                             "subtitle": "featuring mr sam and the dednutz",
                             "startHour": 17,
-                            "starring": ["hatfilms", "sam", "trott", "smith", "ross"],
+                            "starring": ["hatfilms", "sam"],
                             "duration": 2,
                             "style": "white",
-                            "vods": []
+                            "vods": {}
                         }
                     ]
                 },
@@ -90,7 +91,7 @@
                             "starring": ["lewis", "simon", "duncan", "tom", "ben", "rtgame", "pedguin", "leo", "rythian", "spiff", "lydia", "bouphe", "mousie", "sips", "daltos", "ravs", "geestar"],
                             "duration": 4,
                             "style": "pink",
-                            "vods": []
+                            "vods": {}
                         }
                     ]
                 },
@@ -104,16 +105,16 @@
                             "starring": ["lewis", "spiff"],
                             "duration": 1,
                             "style": "blue",
-                            "vods": []
+                            "vods": {}
                         },
                         {
                             "title": "hat films suck at painting",
                             "subtitle": "with bouphe",
                             "startHour": 14,
-                            "starring": ["hatfilms", "bouphe", "trott", "smith", "ross"],
+                            "starring": ["hatfilms", "bouphe"],
                             "duration": 1,
                             "style": "pink",
-                            "vods": []
+                            "vods": {}
                         },
                         {
                             "title": "the jingle jerk off",
@@ -122,7 +123,7 @@
                             "starring": ["tom", "ben"],
                             "duration": 1,
                             "style": "white",
-                            "vods": []
+                            "vods": {}
                         },
                         {
                             "title": "protessional strem",
@@ -131,7 +132,7 @@
                             "starring": ["nilesy", "zylus", "ravs", "panda", "rythian"],
                             "duration": 1,
                             "style": "blue",
-                            "vods": []
+                            "vods": {}
                         }
                     ]
                 },
@@ -145,7 +146,7 @@
                             "starring": [],
                             "duration": 1,
                             "style": "blue",
-                            "vods": []
+                            "vods": {}
                         },
                         {
                             "title": "christmas mysteries",
@@ -154,7 +155,7 @@
                             "starring": ["lewis", "lydia"],
                             "duration": 1,
                             "style": "white",
-                            "vods": []
+                            "vods": {}
                         },
                         {
                             "title": "civilization 5 live at 5",
@@ -163,7 +164,7 @@
                             "starring": ["lewis", "duncan", "rythian", "spiff"],
                             "duration": 2,
                             "style": "pink",
-                            "vods": []
+                            "vods": {}
                         }
                     ]
                 },
@@ -177,7 +178,7 @@
                             "starring": ["lewis", "rambler"],
                             "duration": 1,
                             "style": "blue",
-                            "vods": []
+                            "vods": {}
                         },
                         {
                             "title": "risk",
@@ -186,7 +187,7 @@
                             "starring": [],
                             "duration": 1,
                             "style": "pink",
-                            "vods": []
+                            "vods": {}
                         },
                         {
                             "title": "chilluminati nativity",
@@ -195,7 +196,7 @@
                             "starring": ["simon", "tom", "harry"],
                             "duration": 1,
                             "style": "white",
-                            "vods": []
+                            "vods": {}
                         },
                         {
                             "title": "scotland vs sweden",
@@ -204,7 +205,7 @@
                             "starring": ["rythian", "ravs"],
                             "duration": 1,
                             "style": "white",
-                            "vods": []
+                            "vods": {}
                         }
                     ]
                 },
@@ -218,7 +219,7 @@
                             "starring": ["lewis", "leo", "pedguin", "ravs"],
                             "duration": 1,
                             "style": "white",
-                            "vods": []
+                            "vods": {}
                         },
                         {
                             "title": "pre-poker party",
@@ -227,17 +228,18 @@
                             "starring": ["ben", "harry"],
                             "duration": 1,
                             "style": "blue",
-                            "vods": []
+                            "vods": {}
                         },
                         {
                             "title": "poker tournament",
                             "pretitle": "jingle jam 2019",
                             "subtitle": "hosted by pyrionflax and tom clark",
                             "subtitle2": "featuring loads of yogscast",
+                            "startHour": 17,
                             "starring": ["pyrion", "tom"],
                             "duration": 2,
                             "style": "pink",
-                            "vods": []
+                            "vods": {}
                         }
                     ]
                 }
@@ -245,8 +247,31 @@
         },
         {
             "meta": {
-                "active": false
-            }
+                "active": false,
+                "week": 2
+            },
+            "days": []
+        },
+        {
+            "meta": {
+                "active": false,
+                "week": 3
+            },
+            "days": []
+        },
+        {
+            "meta": {
+                "active": false,
+                "week": 4
+            },
+            "days": []
+        },
+        {
+            "meta": {
+                "active": false,
+                "week": 5
+            },
+            "days": []
         }
     ]
 }
