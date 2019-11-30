@@ -269,7 +269,7 @@ html, body {
         }
         .content {
             width: 1200px;
-            height: 410px;
+            height: 425px;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -313,7 +313,7 @@ html, body {
                     line-height: 1.8rem;
                 }
                 .starring {
-                    height: 75px;
+                    height: 100px;
                     max-width: 100%;
                     overflow-x: scroll;
                     position: relative;
@@ -321,6 +321,8 @@ html, body {
                     display: flex;
                     flex-direction: row;
                     padding: 0 10px;
+                    overflow-x: auto;
+                    overflow-y: hidden;
                     .yog {
                         height: 50px;
                         width: 50px;
