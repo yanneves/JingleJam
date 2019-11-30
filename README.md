@@ -12,4 +12,6 @@
 * Detailed creator profiles
 * Push notifications (if possible?)
 
+#### WARNING: The code is a bit of a mess as I was rushing to build it in 24 hours. Sorry :(
+
 ## Contributors
