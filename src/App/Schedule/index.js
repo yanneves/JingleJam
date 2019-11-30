@@ -248,7 +248,7 @@ class Schedule extends Component {
     render(){
         return(
             <section className="schedule">
-                <div className={`liveTime ${this.state.live ? "active" : null}`} style={{top: this.state.livePosition}}></div>
+                {/* <div className={`liveTime ${this.state.live ? "active" : null}`} style={{top: this.state.livePosition}}></div> */}
                 <article className="time day">{this.state.tz}</article>
                 {
                     this.state.times !== null ?

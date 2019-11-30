@@ -8,7 +8,7 @@
 * List creators hosting/featuring on each stream
 
 ## To-Do List
-* Config Apache to redirect all traffic to React Router
+* ~~Config Apache to redirect all traffic to React Router~~
 * Responsive design
 * Detailed creator profiles
 * Push notifications (if possible?)
