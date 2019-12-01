@@ -11,8 +11,10 @@
 * ~~Config Apache to redirect all traffic to React Router~~
 * ~~Responsive design~~
 * ~~Add donation button~~
+* Fix daylight savings time being wrong in Australia
 * Detailed creator profiles
 * Push notifications (if possible?)
+* Watched list for VODs. Be able to mark which VODs you've seen etc.
 
 #### WARNING: The code is a bit of a mess as I was rushing to build it in 24 hours. Sorry :(
 
