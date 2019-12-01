@@ -91,7 +91,15 @@
                             "starring": ["lewis", "simon", "duncan", "tom", "ben", "rtgame", "pedguin", "leo", "rythian", "spiff", "lydia", "bouphe", "mousie", "sips", "daltos", "ravs", "geestar"],
                             "duration": 4,
                             "style": "pink",
-                            "vods": {}
+                            "vods": {
+                                "twitch": {
+                                    "id": "176655518",
+                                    "time": "00h00m00s"
+                                },
+                                "youtube": {
+                                    "id": "KLi0RfDUNAQ"
+                                }
+                            }
                         }
                     ]
                 },

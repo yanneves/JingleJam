@@ -2,10 +2,11 @@ import React, {Component} from 'react';
 import {withRouter} from 'react-router';
 
 import './schedule.scss';
+import './responsive.scss';
 import logoWhite from './logo_white.png';
 import streams from './data/streams.json';
 import creators from './data/creators.json';
-import {FiChevronLeft, FiChevronRight} from 'react-icons/fi';
+import {FiChevronLeft, FiChevronRight, FiX} from 'react-icons/fi';
 import {FaTwitch, FaYoutube} from 'react-icons/fa';
 
 class Home extends Component {
@@ -65,7 +66,7 @@ class Home extends Component {
             <div className="home">
                 <header>
                     <img className="logo" src={logoWhite} alt="Jingle Jam 2019 Logo" />
-                    <h1>Stream Schedule <span></span> {this.state.streams.meta.week}<sup>{this.state.streams.meta.week === 1 ? "st" : this.state.streams.meta.week === 2 ? "nd" : this.state.streams.meta.week === 3 ? "rd" : "th"}</sup> week</h1>
+                    <h1>Stream Schedule <span></span> <div>{this.state.streams.meta.week}<sup>{this.state.streams.meta.week === 1 ? "st" : this.state.streams.meta.week === 2 ? "nd" : this.state.streams.meta.week === 3 ? "rd" : "th"}</sup> week</div></h1>
                 </header>
                 <Schedule streams={this.state.streams} week={this.state.week} />
                 <div className="controls">
@@ -388,6 +389,7 @@ class ExpandedStream extends Component {
         this.countdown = this.countdown.bind(this);
     }
     componentDidMount(){
+        document.body.classList.add("modal");
         const id = this.props.match.params.streamid.split(".");
         const days = streams.weeks[parseInt(id[0]) - 1].days;
         const day = days.find(day => day.date === parseInt(id[1]));
@@ -454,6 +456,7 @@ class ExpandedStream extends Component {
         this.setState({countdown});
     }
     close(){
+        document.body.classList.remove("modal");
         this.props.history.push('/');
     }
     render(){
@@ -461,6 +464,7 @@ class ExpandedStream extends Component {
             <section className="expanded">
                 <div className="bg" onClick={this.close}></div>
                 <article className={`content ${this.state.stream.style}`}>
+                    <div className="close" onClick={this.close}><FiX /></div>
                     <div className="details">
                         {this.state.stream.title !== undefined ? <h1>{this.state.stream.title}</h1> : null}
                         {this.state.stream.pretitle !== undefined ? <h3>{this.state.stream.pretitle}</h3> : null}
@@ -498,8 +502,11 @@ class ExpandedStream extends Component {
                                 </div>
                             : this.state.state === "live" ? 
                             <div className="live">
-                                <iframe title="YOGSCAST Twitch Stream" src="https://player.twitch.tv/?channel=yogscast" frameBorder="0" allowFullScreen={true} scrolling="no" height="309" width="550"></iframe>
+                                <div className="iframe_container">
+                                    <iframe title="YOGSCAST Twitch Stream" src="https://player.twitch.tv/?channel=yogscast" frameBorder="0" allowFullScreen={true} scrolling="no" height="100%" width="100%"></iframe>
+                                </div>
                                 <h1>watch live!</h1>
+                                <a href="https://twitch.tv/yogscast"><div className="watch">watch live on <FaTwitch /></div></a>
                             </div>
                             : this.state.state === "ended" ?
                             this.state.stream.vods.twitch === undefined && this.state.stream.vods.youtube === undefined ?
@@ -508,17 +515,19 @@ class ExpandedStream extends Component {
                             <div className="allvods">
                                 {
                                     this.state.vod === "twitch" ? 
-                                    <iframe title={`${this.state.stream.title} Twitch VOD`} src={this.state.stream.vods.twitch} frameBorder="0" allowFullScreen={true} scrolling="no" height="309" width="550"></iframe>
+                                    <div className="iframe_container"><iframe title={`${this.state.stream.title} Twitch VOD`} src={`https://player.twitch.tv/?autoplay=false&t=${this.state.stream.vods.twitch.time}&video=v${this.state.stream.vods.twitch.id}`} frameBorder="0" allowFullScreen={true} scrolling="no" height="100%" width="100%"></iframe></div>
                                     : this.state.vod === "youtube" ?
-                                    <iframe title={`${this.state.stream.title} YouTube VOD`} src={this.state.stream.vods.youtube} frameBorder="0" allowFullScreen={true} width="550" height="309" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                                    <div className="iframe_container"><iframe title={`${this.state.stream.title} YouTube VOD`} src={`https://youtube.com/embed/${this.state.stream.vods.youtube.id}`} frameBorder="0" allowFullScreen={true} width="100%" height="100%" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe></div>
                                     : null
                                 }
-                                {
-                                    <ul>
-                                        {this.state.stream.vods.twitch !== undefined ? <li className={`twitch ${this.state.vod === "twitch" ? "active" : null}`} onClick={() => this.setState({vod: "twitch"})}>Watch on <FaTwitch /></li> : null}
-                                        {this.state.stream.vods.youtube !== undefined ? <li className={`youtube ${this.state.vod === "youtube" ? "active" : null}`} onClick={() => this.setState({vod: "youtube"})}>Watch on <FaYoutube /></li> : null}
+                                    <ul className="toggle">
+                                        {this.state.stream.vods.twitch !== undefined ? <li className={`twitch ${this.state.vod === "twitch" ? "active" : null}`} onClick={() => this.setState({vod: "twitch"})}>catch up on <FaTwitch /></li> : null}
+                                        {this.state.stream.vods.youtube !== undefined ? <li className={`youtube ${this.state.vod === "youtube" ? "active" : null}`} onClick={() => this.setState({vod: "youtube"})}>catch up on <FaYoutube /></li> : null}
                                     </ul>
-                                }
+                                    <ul className="mobile">
+                                        {this.state.stream.vods.twitch !== undefined ? <a href={`https://twitch.tv/${this.state.stream.vods.twitch.id}?t=${this.state.stream.vods.twitch.time}`}><li className="twitch">catch up on <FaTwitch /></li></a> : null}
+                                        {this.state.stream.vods.youtube !== undefined ? <a href={`https://youtube.com/watch?v=${this.state.stream.vods.youtube.id}`}><li className="youtube">catch up on <FaYoutube /></li></a> : null}
+                                    </ul>
                             </div> : null
                         }
                     </div>

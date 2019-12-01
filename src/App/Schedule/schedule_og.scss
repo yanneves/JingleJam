@@ -1,87 +1,97 @@
-$darkBlue: #081633;
-$blue: #13182e;
-$orange: #f04a1a;
-$paleBlue: #aab2d6;
-$streamBlueBg: #005491;
-$streamBlueBorder: #4593d1;
-$streamWhiteBlueText: #064372;
-$streamPinkBorder: #9a0a2e;
-$streamPinkPrim: rgba(166, 17, 59, 1);
-$streamPinkSec: rgba(220, 23, 79, 1);
-$twitch: #6441a5;
-$youtube: #c4302b;
-
-
 html, body {
-    background: $darkBlue url(./background.png) no-repeat center center;
+    background: url(./background.png) no-repeat center center;
     background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
+    min-width: 100%;
+    min-height: 100vh;
     font-size: 16px;
-    &.modal {
-        overflow: hidden;
-    }
     .home {
-        height: auto;
+        height: 100vh;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        overflow-x: hidden;
         .controls {
-            // add styling once second week is released
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            pointer-events: none;
+            article {
+                position: absolute;
+                background: #ffffff;
+                color: #081633;
+                height: 50px;
+                width: 50px;
+                top: 50%;
+                transform: translate(0, -50%);
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                cursor: pointer;
+                pointer-events: all;
+                &.prev {
+                    left: 25px;
+                }
+                &.next {
+                    right: 25px;
+                }
+            }
         }
         header {
             width: 100%;
-            height: auto;
+            height: 100px;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
             justify-content: center;
-            box-sizing: border-box;
-            padding: 0 25px;
             margin: 25px 0;
             img.logo {
+                height: 100%;
                 width: auto;
-                height: 75px;
+                margin-right: 60px;
             }
             h1 {
-                color: $darkBlue;
+                color: #081633;
                 background: #ffffff;
                 margin: 0;
+                font-size: 4rem;
+                padding: 0 75px;
                 display: flex;
                 flex-direction: row;
-                font-size: 1.8rem;
-                width: 100%;
-                box-sizing: border-box;
-                justify-content: center;
-                align-items: center;
-                margin-top: 15px;
-                padding: 5px 0;
-                span, div {
-                    display: none;
+                span {
+                    background: #081633;
+                    width: 5px;
+                    height: 64px;
+                    display: inline-block;
+                    margin: 3px 25px;
+                }
+                sup {
+                    vertical-align: top;
+                    font-size: 2rem;
+                    line-height: 3rem;
+                    margin-right: 13px;
                 }
             }
         }
         section.schedule {
-            width: 100%;
-            display: grid;
+            width: calc(100% - 200px);
             flex-grow: 1;
-            grid-template-columns: 55px repeat(7, calc(100% - 65px));
-            grid-template-rows: 55px repeat(4, minmax(160px, 1fr));
+            display: grid;
+            grid-template-columns: 55px repeat(7, 1fr);
+            grid-template-rows: 55px repeat(4, 1fr);
             grid-gap: 10px;
-            position: relative;
-            overflow-x: auto;
-            overflow-y: visible;
             box-sizing: border-box;
-            padding: 0 10px;
-            margin-bottom: 30px;
+            margin-bottom: 50px;
+            position: relative;
             .liveTime {
                 position: absolute;
                 height: 3px;
                 width: 55px;
-                background: $orange;
+                background: #f04a1a;
                 opacity: 0;
                 z-index: 50;
                 &.active {
@@ -95,17 +105,16 @@ html, body {
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-between;
-                box-shadow: 0 0 15px 0 rgba(0,0,0,0.5);
                 h1 {
                     margin: 0;
                     transform: rotate(-90deg);
-                    color: $paleBlue;
+                    color: #aab2d6;
                     font-size: 1.5rem;
                 }
                 h3, h4 {
                     margin: 5px 0;
                     font-size: 1.3rem;
-                    color: $blue;
+                    color: #13182e;
                 }
             }
             ._11 {
@@ -118,7 +127,7 @@ html, body {
                 grid-row: 4;
             }
             ._20 {
-                grid-row: 5
+                grid-row: 5;
             }
             .day {
                 display: flex;
@@ -126,11 +135,11 @@ html, body {
                 align-items: center;
                 justify-content: center;
                 background: #ffffff;
-                color: $blue;
-                font-size: 1.4rem;
+                color: #13182e;
+                font-size: 1.7rem;
                 sub {
-                    font-size: 1rem;
-                    margin-top: 4px;
+                    font-size: 1.2rem;
+                    margin-top: 5px;
                 }
                 &.time {
                     font-size: 1rem;
@@ -166,6 +175,7 @@ html, body {
                 cursor: pointer;
                 padding: 10px;
                 text-align: center;
+                transition: .2s ease;
                 h1 {
                     margin: 0;
                     font-size: 2rem;
@@ -186,6 +196,7 @@ html, body {
                     margin: 0;
                     margin-bottom: 10px;
                 }
+
                 &.duration_1 {
                     grid-row-end: span 1;
                 }
@@ -198,9 +209,10 @@ html, body {
                 &.duration_4 {
                     grid-row-end: span 4;
                 }
+
                 &.blue {
-                    background: $streamBlueBg;
-                    border: 4px solid $streamBlueBorder;
+                    background: #005491;
+                    border: 4px solid #4593d1;
                     color: #ffffff;
                     h1, h4, h5, h3 {
                         text-shadow: 0 0 7px #000000;
@@ -208,98 +220,92 @@ html, body {
                 }
                 &.white {
                     background: #ffffff;
-                    color: $streamWhiteBlueText;
+                    color: #064372;
                 }
                 &.pink {
-                    border: 4px solid $streamPinkBorder;
+                    border: 4px solid #9a0a2e;
                     color: #ffffff;
-                    background: $streamPinkPrim;
-                    background: linear-gradient(0deg, $streamPinkPrim 0%, $streamPinkSec 100%);
+                    background: rgb(166,17,59);
+                    background: linear-gradient(0deg, rgba(166,17,59,1) 0%, rgba(220,23,79,1) 100%);
                     &.duration_4 {
-                        background: $streamPinkPrim;
-                        background: linear-gradient(0deg, $streamPinkPrim 0%, $streamPinkSec 50%, $streamPinkPrim 100%);
+                        background: rgb(166,17,59);
+                        background: linear-gradient(0deg, rgba(166,17,59,1) 0%, rgba(220,23,79,1) 50%, rgba(166, 17, 59, 1) 100%);
                     }
                     h1, h4, h5, h3 {
                         text-shadow: 0 0 7px #000000;
                     }
                 }
             }
+            pointer-events: none;
+            & > .stream {
+                pointer-events: auto;
+            }
+            &:hover > .stream {
+                opacity: 0.7;
+                &:hover {
+                    opacity: 1;
+                }
+            }
         }
     }
     .expanded {
         position: absolute;
-        z-index: 100%;
+        z-index: 100;
         height: 100vh;
         width: 100%;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
         top: 0;
         left: 0;
-        overflow-x: hidden;
-        overflow-y: auto;
-        .close {
-            position: absolute;
-            height: 30px;
-            width: 30px;
-            display: flex;
-            align-items: center;
-            border-radius: 50%;
-            box-shadow: 0 0 15px 0 rgba(0,0,0, 0.3);
-            justify-content: center;
-            top: 15px;
-            right: 15px;
-        }
-        .blue > .close {
-            background: #ffffff;
-            color: $streamBlueBg;
-        }
-        .pink > .close {
-            background: #ffffff;
-            color: $streamPinkPrim;
-        }
-        .white > .close {
-            background: $streamWhiteBlueText;
-            color: #ffffff;
-        }
         .bg {
-            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: 100;
+            background: #000000;
+            opacity: 0.6;
         }
         .content {
-            width: 100%;
-            min-height: 100%;
+            width: 1200px;
+            height: 425px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             position: absolute;
             z-index: 101;
-            top: 0;
-            left: 0;
+            box-shadow: 0 0 25px 0 rgba(0,0,0,0.5);
             display: flex;
-            flex-direction: column;
-            box-sizing: border-box;
+            flex-direction: row;
             &.blue {
-                background: $streamBlueBg;
-                border: 4px solid $streamBlueBorder;
+                background: #005491;
+                border: 4px solid #4593d1;
                 color: #ffffff;
             }
             &.pink {
-                border: 4px solid $streamPinkBorder;
+                border: 4px solid #9a0a2e;
                 color: #ffffff;
-                background: $streamPinkPrim;
-                background: linear-gradient(0deg, $streamPinkPrim 0%, $streamPinkSec 50%, $streamPinkPrim 100%);
+                background: rgb(166,17,59);
+                background: linear-gradient(0deg, rgba(166,17,59,1) 0%, rgba(220,23,79,1) 50%, rgba(166, 17, 59, 1) 100%);
             }
             &.white {
                 background: #ffffff;
-                color: $streamWhiteBlueText;
+                color: #064372;
             }
             .details {
-                width: 100%;
-                height: auto;
+                height: 100%;
+                width: 50%;
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
                 box-sizing: border-box;
-                padding: 15px;
-                margin-top: 30px;
+                padding: 25px;
                 h1 {
                     font-size: 4rem;
                     margin: 0;
                     line-height: 3.5rem;
-                    margin-bottom: 20px;
+                    margin-bottom: 30px;
                 }
                 h3, h4, h5 {
                     font-size: 2rem;
@@ -307,13 +313,15 @@ html, body {
                     line-height: 1.8rem;
                 }
                 .starring {
-                    height: 50px;
-                    width: 100%;
-                    overflow-x: auto;
+                    height: 100px;
+                    max-width: 100%;
+                    overflow-x: scroll;
                     position: relative;
                     margin-top: 25px;
                     display: flex;
                     flex-direction: row;
+                    padding: 0 10px;
+                    overflow-x: auto;
                     overflow-y: hidden;
                     .yog {
                         height: 50px;
@@ -323,29 +331,72 @@ html, body {
                         flex-shrink: 0;
                         margin: 0 5px;
                         position: relative;
+                        cursor: pointer;
                         img {
                             height: 100%;
                             width: 100%;
                             border-radius: 50%;
                         }
                         .tooltip {
-                            display: none;
+                            pointer-events: none;
+                            opacity: 0;
+                            position: absolute;
+                            white-space: nowrap;
+                            top: calc(100% + 5px);
+                            left: 50%;
+                            transform: translate(-50%, 0);
+                            background: #ffffff;
+                            color: rgb(166,17,59);
+                            padding: 0 10px;
+                            height: 20px;
+                            border-radius: 10px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 1rem;
+                            transition: .2s ease;
+                        }
+                        &:hover {
+                            .tooltip {
+                                opacity: 1;
+                            }
                         }
                     }
                 }
             }
-            &.white .details .starring .yog {
-                background: rgba(0,0,0,0.1);
+            &.white {
+                .details {
+                    .starring {
+                        .yog {
+                            background: rgba(0,0,0,.1);
+                            .tooltip {
+                                background: #064372;
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+            &.blue {
+                .details {
+                    .starring {
+                        .yog {
+                            .tooltip {
+                                color: #005491;
+                            }
+                        }
+                    }
+                }
             }
             .vods {
-                width: 100%;
+                height: 100%;
+                width: 50%;
                 display: flex;
-                justify-content: center;
                 align-items: center;
+                padding: 25px;
                 box-sizing: border-box;
-                padding: 15px;
+                justify-content: center;
                 .countdown {
-                    margin-bottom: 25px;
                     h2 {
                         margin: 0;
                         line-height: 1.5rem;
@@ -363,6 +414,7 @@ html, body {
                                 position: absolute;
                                 height: 20px;
                                 padding: 0 10px;
+                                border-radius: 10px;
                                 top: calc(100% - 5px);
                                 line-height: 1rem;
                                 left: 50%;
@@ -371,78 +423,62 @@ html, body {
                         }
                     }
                 }
-                .iframe_container {
-                    width: 550px;
-                    height: calc((550px / 16) * 9);
-                    display: none;
-                }
                 .live {
                     display: flex;
-                    flex-direction: column-reverse;
-                    width: 100%;
+                    flex-direction: column;
                     h1 {
-                        display: none;
-                    }
-                    .watch {
-                        height: 50px;
-                        background: $twitch;
-                        color: #ffffff;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        font-size: 1.5rem;
-                        svg {
-                            margin-left: 5px;
-                        }
+                        margin: 0;
+                        text-align: right;
+                        font-size: 3rem;
+                        margin-top: 5px;
                     }
                 }
                 .novods {
                     font-size: 1.5rem;
-                    text-align: center;
                 }
                 .allvods {
                     display: flex;
                     flex-direction: column;
-                    width: 100%;
                     ul {
                         list-style: none;
                         display: flex;
-                        flex-direction: column;
+                        flex-direction: row;
+                        height: 40px;
                         padding: 0;
                         margin: 0;
+                        margin-top: 10px;
                         overflow: hidden;
-                        width: 100%;
-                        &.toggle {
-                            display: none;
-                        }
                         li {
                             display: flex;
-                            height: 50px;
-                            width: 100%;
+                            flex-grow: 1;
                             align-items: center;
                             justify-content: center;
                             padding: 0;
                             margin: 0;
-                            font-size: 1.5rem;
-                            color: #ffffff;
-                            margin-bottom: 10px;
+                            font-size: 1.3rem;
+                            border: 2px solid #ffffff;
+                            box-sizing: border-box;
+                            cursor: pointer;
+                            transition: .2s ease;
+                            &:first-child {
+                                margin-right: 5px;
+                            }
+                            &:last-child {
+                                margin-left: 5px;
+                            }
                             svg {
                                 margin-left: 5px;
                             }
-                            &.twitch {
-                                background: $twitch;
+                            &.twitch:hover, &.twitch.active {
+                                background: #6441a5;
+                                color: #ffffff;
                             }
-                            &.youtube {
-                                background: $youtube;
+                            &.youtube:hover, &.youtube.active {
+                                color: #ffffff;
+                                background: #c4302b;
                             }
                         }
                     }
-                }
-            }
-            &.pink {
-                .vods .allvods ul li.youtube {
-                    background: #ffffff;
-                    color: $youtube;
                 }
             }
         }
