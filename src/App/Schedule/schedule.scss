@@ -29,6 +29,22 @@ html, body {
         align-items: center;
         justify-content: center;
         overflow-x: hidden;
+        .donate {
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            z-index: 90;
+            background: $orange;
+            color: #ffffff;
+            box-shadow: 0 0 15px 0 rgba(0,0,0,0.5);
+            height: 40px;
+            display: flex;
+            align-items: center;
+            font-size: 1.4rem;
+            padding: 0 25px;
+            border-radius: 20px;
+        }
         .controls {
             // add styling once second week is released
         }

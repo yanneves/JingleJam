@@ -35,8 +35,23 @@
     }
 }
 
+@media only screen and (min-width: 700px){
+    html, body {
+        .home .donate {
+            bottom: auto;
+            top: calc(75px / 2);
+            left: auto;
+            right: 25px;
+            transform: none;
+        }
+    }
+}
+
 @media only screen and (min-width: 1024px){
     html, body {
+        .home .donate {
+            cursor: pointer;
+        }
         .home section.schedule {
             .stream {
                 transition: .2s ease;
@@ -130,6 +145,11 @@
 @media only screen and (min-width: 1175px){
     html, body {
         .home {
+            .donate {
+                top: auto;
+                right: 25px;
+                bottom: 25px;
+            }
             header {
                 height: 100px;
                 flex-direction: row;
@@ -243,6 +263,10 @@
 @media only screen and (min-width: 1550px){
     html, body {
         .home {
+            .donate {
+                top: 55px;
+                bottom: auto;
+            }
             section.schedule {
                 width: auto;
             }

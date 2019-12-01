@@ -64,6 +64,7 @@ class Home extends Component {
     render(){
         return(
             <div className="home">
+                <div className="donate" onClick={() => window.open("https://humblebundle.com/yogscast", "_blank")}>donate here!</div>
                 <header>
                     <img className="logo" src={logoWhite} alt="Jingle Jam 2019 Logo" />
                     <h1>Stream Schedule <span></span> <div>{this.state.streams.meta.week}<sup>{this.state.streams.meta.week === 1 ? "st" : this.state.streams.meta.week === 2 ? "nd" : this.state.streams.meta.week === 3 ? "rd" : "th"}</sup> week</div></h1>
