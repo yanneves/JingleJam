@@ -9,6 +9,9 @@ import creators from './data/creators.json';
 import {FiChevronLeft, FiChevronRight, FiX} from 'react-icons/fi';
 import {FaTwitch, FaYoutube} from 'react-icons/fa';
 
+import CreatorThumbnail from '../Components/DetailStreamer/CreatorThumbnail'
+import StreamerDetails from '../Components/DetailStreamer/StreamerDetails';
+
 class Home extends Component {
     constructor(){
         super();
@@ -383,7 +386,9 @@ class ExpandedStream extends Component {
             stream: {},
             state: null,
             countdown: null,
-            vod: null
+            vod: null,
+            showYogDetails : false,
+            focusedYog: '',
         }
         this.close = this.close.bind(this);
         this.updateState = this.updateState.bind(this);
@@ -460,34 +465,58 @@ class ExpandedStream extends Component {
         document.body.classList.remove("modal");
         this.props.history.push('/');
     }
+
+    onSelectYog = (Yog) => {
+        this.setState({showYogDetails : true, focusedYog : Yog});
+    }
+
     render(){
+        let detailPanel = '';
+
+        if(this.state.showYogDetails)
+        {
+           detailPanel = (<StreamerDetails
+                Yog={this.state.focusedYog}
+           /> );
+        }else
+        {
+            detailPanel = (
+                <div className="details">
+                {this.state.stream.title !== undefined ? <h1>{this.state.stream.title}</h1> : null}
+                {this.state.stream.pretitle !== undefined ? <h3>{this.state.stream.pretitle}</h3> : null}
+                {this.state.stream.subtitle !== undefined ? <h4>{this.state.stream.subtitle}</h4> : null}
+                {this.state.stream.subtitle2 !== undefined ? <h5>{this.state.stream.subtitle2}</h5> : null}
+                <div className="starring">
+                    {
+                        this.state.stream.starring === undefined ? null :
+                        this.state.stream.starring.map((yog, i) => {
+                            return (
+                                    
+                                    <div className="yog" key={i}>
+                                        {
+                                            creators[yog] === undefined ? null :
+                                            <CreatorThumbnail
+                                                yog={creators[yog]}
+                                                onSelectYog={this.onSelectYog}
+                                            />
+                                        }
+                                    </div> 
+                            )
+                        })
+                    }
+                </div>
+            </div>
+                        );
+            }
+
+
+
         return(
             <section className="expanded">
                 <div className="bg" onClick={this.close}></div>
                 <article className={`content ${this.state.stream.style}`}>
                     <div className="close" onClick={this.close}><FiX /></div>
-                    <div className="details">
-                        {this.state.stream.title !== undefined ? <h1>{this.state.stream.title}</h1> : null}
-                        {this.state.stream.pretitle !== undefined ? <h3>{this.state.stream.pretitle}</h3> : null}
-                        {this.state.stream.subtitle !== undefined ? <h4>{this.state.stream.subtitle}</h4> : null}
-                        {this.state.stream.subtitle2 !== undefined ? <h5>{this.state.stream.subtitle2}</h5> : null}
-                        <div className="starring">
-                            {
-                                this.state.stream.starring === undefined ? null :
-                                this.state.stream.starring.map((yog, i) => {
-                                    return (
-                                        <div className="yog" key={i}>
-                                            {
-                                                creators[yog] === undefined ? null :
-                                                <img src={creators[yog].profilePicture} alt={`${yog} profile`} />
-                                            }
-                                            <div className="tooltip">{creators[yog] === undefined ? null : creators[yog].displayName}</div>
-                                        </div>
-                                    )
-                                })
-                            }
-                        </div>
-                    </div>
+                    {detailPanel}
                     <div className="vods">
                         {
                             this.state.state === "upcoming" ? 
