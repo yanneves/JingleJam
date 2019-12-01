@@ -9,7 +9,7 @@
 
 ## To-Do List
 * ~~Config Apache to redirect all traffic to React Router~~
-* Responsive design
+* ~~Responsive design~~
 * Detailed creator profiles
 * Push notifications (if possible?)
 
