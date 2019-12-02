@@ -16,7 +16,12 @@
                             "starring": [],
                             "duration": 1,
                             "style": "blue",
-                            "vods": {}
+                            "vods": {
+                                "twitch": {
+                                    "id": "515641175",
+                                    "time": "00h00m00s"
+                                }
+                            }
                         },
                         {
                             "title": "jingle jam warm up",
@@ -25,7 +30,12 @@
                             "starring": ["tom", "ben"],
                             "duration": 1,
                             "style": "white",
-                            "vods": {}
+                            "vods": {
+                                "twitch": {
+                                    "id": "515688440",
+                                    "time": "00h00m00s"
+                                }
+                            }
                         },
                         {
                             "title": "jingle cats & launch",
@@ -34,7 +44,12 @@
                             "starring": ["lewis", "simon"],
                             "duration": 1,
                             "style": "pink",
-                            "vods": {}
+                            "vods": {
+                                "twitch": {
+                                    "id": "515749513",
+                                    "time": "00h00m00s"
+                                }
+                            }
                         },
                         {
                             "title": "trains and chill",
@@ -43,7 +58,12 @@
                             "starring": ["lewis", "duncan"],
                             "duration": 1,
                             "style": "blue",
-                            "vods": {}
+                            "vods": {
+                                "twitch": {
+                                    "id": "515835180",
+                                    "time": "00h00m00s"
+                                }
+                            }
                         }
                     ]
                 },
