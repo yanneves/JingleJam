@@ -6,7 +6,7 @@ import './responsive.scss';
 import logoWhite from './logo_white.png';
 import streams from './data/streams.json';
 import creators from './data/creators.json';
-import {FiChevronLeft, FiChevronRight, FiX} from 'react-icons/fi';
+import {FiChevronLeft, FiChevronRight, FiX, FiCheck} from 'react-icons/fi';
 import {FaTwitch, FaYoutube} from 'react-icons/fa';
 
 import {CreatorDetails, CreatorThumbnail} from '../Components/DetailStreamer/StreamerDetails';
@@ -388,6 +388,7 @@ class ExpandedStream extends Component {
             vod: null,
             showYogDetails : false,
             focusedYog: '',
+            idString: null
         }
         this.close = this.close.bind(this);
         this.updateState = this.updateState.bind(this);
@@ -409,7 +410,7 @@ class ExpandedStream extends Component {
             vod = "youtube";
         }
 
-        this.setState({id, stream, vod}, this.updateState);
+        this.setState({id, stream, vod, idString: this.props.match.params.streamid}, this.updateState);
     }
     updateState(){
         const now = new Date();
@@ -472,7 +473,6 @@ class ExpandedStream extends Component {
     closeProfile(){
         this.setState({profile: false});
     }
-
     render(){
         return(
             <section className="expanded">
@@ -486,6 +486,7 @@ class ExpandedStream extends Component {
                             {this.state.stream.pretitle !== undefined ? <h3>{this.state.stream.pretitle}</h3> : null}
                             {this.state.stream.subtitle !== undefined ? <h4>{this.state.stream.subtitle}</h4> : null}
                             {this.state.stream.subtitle2 !== undefined ? <h5>{this.state.stream.subtitle2}</h5> : null}
+                            {this.props.watched.indexOf(this.state.idString) === -1 ? <div className="watched" onClick={() => this.props.addWatched(this.state.idString)}><FiCheck /></div> : <div className="watched filled" onClick={() => this.props.removeWatched(this.state.idString)}><FiCheck /></div>}
                             <div className="starring">
                                 {
                                     this.state.stream.starring === undefined ? null :

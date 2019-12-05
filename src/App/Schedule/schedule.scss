@@ -319,6 +319,60 @@ html, body {
                 box-sizing: border-box;
                 padding: 15px;
                 margin-top: 30px;
+                .watched {
+                    height: 25px;
+                    width: 25px;
+                    border: 1px solid #ffffff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 0.9rem;
+                    position: relative;
+                    margin-top: 15px;
+                    border-radius: calc(25px / 2);
+                    cursor: pointer;
+                    box-sizing: border-box;
+                    svg {
+                        padding-top: 1px;
+                        padding-left: 2px;
+                    }
+                    &::after {
+                        position: absolute;
+                        content: 'Add to watched list';
+                        font-size: 1rem;
+                        margin-left: 3px;
+                        white-space: nowrap;
+                        padding: 5px 10px;
+                        left: calc(100% + 10px);
+                        top: 50%;
+                        transform: translate(0, -50%);
+                        pointer-events: none;
+                        opacity: 0;
+                    }
+                    &::before {
+                        content: '';
+                        height: 10px;
+                        width: 10px;
+                        position: absolute;
+                        left: calc(100% + 11px);
+                        top: 50%;
+                        transform: translate(0, -50%) rotate(45deg);
+                        pointer-events: none;
+                        opacity: 0;
+                    }
+
+                    &.filled {
+                        &::after {
+                            content: 'Remove from watched list'
+                        }
+                    }
+
+                    &:hover {
+                        &::before, &::after {
+                            opacity: 1;
+                        }
+                    }
+                }
                 h1 {
                     font-size: 4rem;
                     margin: 0;
@@ -356,6 +410,28 @@ html, body {
                             display: none;
                         }
                     }
+                }
+            }
+            &.white .details .watched {
+                color: $streamWhiteBlueText;
+                border-color: $streamWhiteBlueText;
+                &::after, &::before, &.filled {
+                    background: $streamWhiteBlueText;
+                    color: #ffffff;
+                }
+            }
+            &.blue .details .watched {
+                &::after, &::before, &.filled {
+                    background: #ffffff;
+                    color: $streamBlueBg;
+                }
+            }
+            &.pink .details .watched {
+                color: #ffffff;
+                border-color: #ffffff;
+                &::before, &::after, &.filled {
+                    background: #ffffff;
+                    color: $streamPinkPrim;
                 }
             }
             &.white .details .starring .yog {

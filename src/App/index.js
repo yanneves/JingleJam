@@ -16,11 +16,42 @@ class App extends Component {
             loading = false;
             loadingHidden = true;
         }
+
+        var watched = [];
+        if (localStorage.getItem("watched")){
+            watched = localStorage.getItem("watched").split(",");
+        } else {
+            localStorage.setItem("watched", watched.toString());
+        }
+
         this.state = {
             loading,
-            loadingHidden
+            loadingHidden,
+            watched
         }
         this.toggleLoading = this.toggleLoading.bind(this);
+        this.addWatched = this.addWatched.bind(this);
+        this.removeWatched = this.removeWatched.bind(this);
+    }
+    addWatched(id){
+        if (id !== null && id !== undefined && id !== ''){
+            var watched = this.state.watched;
+            if (watched.indexOf(id) === -1){
+                watched.push(id);
+                localStorage.setItem("watched", watched.toString());
+                this.setState({watched});
+            }
+        }
+    }
+    removeWatched(id){
+        if (id !== null && id !== undefined && id !== ''){
+            var watched = this.state.watched;
+            if (watched.indexOf(id) !== -1){
+                watched.splice(watched.indexOf(id), 1);
+                localStorage.setItem("watched", watched.toString());
+                this.setState({watched});
+            }
+        }
     }
     toggleLoading(){
         const loading = this.state.loading;
@@ -54,9 +85,9 @@ class App extends Component {
     render(){
         return(
             <Router>
-                <Home toggleLoading={this.toggleLoading} />
+                <Home toggleLoading={this.toggleLoading}/>
                 <Switch>
-                    <Route path="/stream/:streamid" exact render={(props) => <ExpandedStream {...props} />} />
+                    <Route path="/stream/:streamid" exact render={(props) => <ExpandedStream {...props} watched={this.state.watched} addWatched={this.addWatched} removeWatched={this.removeWatched}/>} />
                     <Route path="/creator/:creatorid" exact render={(props) => <CreatorProfile {...props} />} />
                 </Switch>
                 {
