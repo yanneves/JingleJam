@@ -12,7 +12,7 @@
 * ~~Responsive design~~
 * ~~Add donation button~~
 * Fix daylight savings time being wrong in Australia
-* Detailed creator profiles - Working on this component (carddeath (CharlieIllyria))
+* ~~Detailed creator profiles~~
 * Push notifications (if possible?)
 * Watched list for VODs. Be able to mark which VODs you've seen etc.
 
@@ -20,3 +20,4 @@
 
 ## Contributors
 * [rmp135](https://github.com/rmp135)
+* [carddeath](https://github.com/carddeath)
