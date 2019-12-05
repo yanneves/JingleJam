@@ -303,6 +303,14 @@ html, body {
                 background: #ffffff;
                 color: $streamWhiteBlueText;
             }
+            .profile {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                box-sizing: border-box;
+                padding: 15px;
+            }
             .details {
                 width: 100%;
                 height: auto;
@@ -465,48 +473,31 @@ html, body {
     }
 }
 
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-  }
-
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
-
-  .fa-youtube {
-    background: #bb0000;
-    color: white;
-  }
-
-  .fa-twitch {
-      background: #6441a5;
-      color: white;
-  }
-
-  .fa-reddit {
-    background: #ff5700;
-    color: white;
-  }
-
- .yogDetailProfilePic {
-    height: 100px;
-    padding: 0 10px;
-    border-radius: 50%;
- }
-
- .detailTitle{
-     display: inline-flex;
-     margin-right: 12px;
-     align-items: center;
- }
+.detailTitle {
+    a {
+        padding: 20px;
+        font-size: 30px;
+        width: 30px;
+        border-radius: 50%;
+        &.facebook {
+            background: #3b5998;
+            color: #ffffff;
+        }
+        &.twitter {
+            background: #55acee;
+            color: #ffffff;
+        }
+        &.youtube {
+            background: $youtube;
+            color: #ffffff;
+        }
+        &.twitch {
+            background: $twitch;
+            color: #ffffff;
+        }
+        &.reddit {
+            background: #ff5700;
+            color: #ffffff;
+        }
+    }
+}

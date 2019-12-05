@@ -5,9 +5,7 @@
         "socialMedia": {
             "twitter": "https://twitter.com/YogscastLewis",
             "youtube": "https://www.youtube.com/user/BlueXephos",
-            "facebook": "https://www.facebook.com/lewisxephos",
-            "twitch": "https://www.twitch.tv/yogscast",
-            "reddit": "https://www.reddit.com/user/LewisXephos"
+            "twitch": "https://www.twitch.tv/yogscast"
         }
     },
     "simon": {
@@ -16,9 +14,7 @@
         "socialMedia": {
             "twitter": "https://twitter.com/SimonHoneydew",
             "youtube": "https://www.youtube.com/user/BlueXephos",
-            "facebook": "https://www.facebook.com/SimonHoneydew",
-            "twitch": "https://www.twitch.tv/yogscast",
-            "reddit": "https://www.reddit.com/user/SimonHoneydew"
+            "twitch": "https://www.twitch.tv/yogscast"
         }
     },
     "duncan": {
@@ -27,105 +23,218 @@
         "socialMedia": {
             "twitter": "https://twitter.com/YogscastLalna",
             "youtube": "https://www.youtube.com/user/Yogscastlalna",
-            "facebook": "https://www.facebook.com/yogscastlalna",
-            "twitch": "https://www.twitch.tv/lalna",
-            "reddit": "http://www.reddit.com/user/Yogscastlalna"
+            "twitch": "https://www.twitch.tv/lalna"
         }
     },
     "sips": {
         "displayName": "sips",
-        "profilePicture": "https://i.imgur.com/JlNLqJG.jpg"
+        "profilePicture": "https://i.imgur.com/JlNLqJG.jpg",
+        "socialMedia": {
+            "twitter": "https://twitter.com/Sips_",
+            "youtube": "http://www.youtube.com/user/YogscastSips",
+            "twitch": "http://www.twitch.tv/sips_"
+        }
     },
     "kim": {
         "displayName": "Kim",
-        "profilePicture": "https://i.imgur.com/oiSl9db.jpg"
+        "profilePicture": "https://i.imgur.com/oiSl9db.jpg",
+        "socialMedia": {
+            "twitter": "https://twitter.com/nanosounds",
+            "youtube": "https://www.youtube.com/user/yogscastkim",
+            "twitch": "https://www.twitch.tv/yogscastkim"
+        }
     },
     "inthelittlewood": {
         "displayName": "InTheLittleWood",
-        "profilePicture": "https://i.imgur.com/fFzReSy.jpg"
+        "profilePicture": "https://i.imgur.com/fFzReSy.jpg",
+        "socialMedia": {
+            "twitter": "https://twitter.com/inthelittlewood",
+            "youtube": "http://www.youtube.com/user/inthelittlewood",
+            "twitch": "https://www.twitch.tv/inthelittlewood"
+        }
     },
     "tom": {
         "displayName": "Tom",
-        "profilePicture": "https://i.imgur.com/ixU5sBJ.jpg"
+        "profilePicture": "https://i.imgur.com/ixU5sBJ.jpg",
+        "socialMedia": {
+            "twitter": "https://twitter.com/Angory_Tom",
+            "youtube": "https://www.youtube.com/channel/UC5rUMdCFWPXYs9e8PBLzq5g",
+            "twitch": "https://www.twitch.tv/angorytom"
+        }
     },
     "ben": {
         "displayName": "Ben",
-        "profilePicture": "https://i.imgur.com/MSPIkpr.jpg"
+        "profilePicture": "https://i.imgur.com/MSPIkpr.jpg",
+        "socialMedia": {
+            "twitter": "https://twitter.com/Bedgarsan",
+            "youtube": "https://www.youtube.com/channel/UCZocsFkVaKQVPfVjbm4avYg"
+        }
     },
     "bouphe": {
         "displayName": "Bouphe",
-        "profilePicture": "https://i.imgur.com/b2xzZMl.jpg"
+        "profilePicture": "https://i.imgur.com/b2xzZMl.jpg",
+        "socialMedia": {
+            "twitter": "https://twitter.com/bouphe",
+            "youtube": "https://www.youtube.com/channel/UC0K88i2HolAeHRE57l-Pb5w",
+            "twitch": "https://www.twitch.tv/bouphe"
+        }
     },
     "lydia": {
         "displayName": "Lydia",
-        "profilePicture": "https://i.imgur.com/rrmDAOE.jpg"
+        "profilePicture": "https://i.imgur.com/rrmDAOE.jpg",
+        "socialMedia": {
+            "twitter": "https://twitter.com/squidgaming",
+            "youtube": "https://www.youtube.com/user/squidgame",
+            "twitch": "https://www.twitch.tv/squidgame"
+        }
     },
     "spiff": {
         "displayName": "The Spiffing Brit",
-        "profilePicture": "https://i.imgur.com/PDWv6Oa.jpg"
+        "profilePicture": "https://i.imgur.com/PDWv6Oa.jpg",
+        "socialMedia": {
+            "twitter": "https://twitter.com/thespiffingbrit",
+            "youtube": "https://www.youtube.com/channel/UCRHXUZ0BxbkU2MYZgsuFgkQ/",
+            "twitch": "https://www.twitch.tv/thespiffingbrit/"
+        }
     },
     "hatfilms": {
         "displayName": "Hat Films",
-        "profilePicture": "https://i.imgur.com/LuiPsXP.jpg"
+        "profilePicture": "https://i.imgur.com/LuiPsXP.jpg",
+        "socialMedia": {
+            "twitter": "https://twitter.com/hat_films",
+            "youtube": "https://www.youtube.com/user/HaatFilms",
+            "twitch": "http://www.twitch.tv/hatfilms"
+        }
     },
     "sam": {
         "displayName": "Sam",
-        "profilePicture": "https://i.imgur.com/EzdY7hk.jpg"
+        "profilePicture": "https://i.imgur.com/EzdY7hk.jpg",
+        "socialMedia": {
+            "twitter": "https://twitter.com/03gibbss"
+        }
     },
     "rtgame": {
         "displayName": "RTGame",
-        "profilePicture": "https://i.imgur.com/BPb66WW.jpg"
+        "profilePicture": "https://i.imgur.com/BPb66WW.jpg",
+        "socialMedia": {
+            "twitter": "https://twitter.com/RTGameCrowd",
+            "youtube": "https://www.youtube.com/user/RTGame/",
+            "twitch": "https://www.twitch.tv/rtgamecrowd"
+        }
     },
     "pedguin": {
         "displayName": "Pedguin",
-        "profilePicture": "https://i.imgur.com/jdHjviL.jpg"
+        "profilePicture": "https://i.imgur.com/jdHjviL.jpg",
+        "socialMedia": {
+            "twitter": "https://twitter.com/Pedguin",
+            "youtube": "https://www.youtube.com/user/PedguinGames/",
+            "twitch": "https://www.twitch.tv/pedguin/"
+        }
     },
     "leo": {
         "displayName": "Leo",
-        "profilePicture": "https://i.imgur.com/Xg2FWvl.jpg"
+        "profilePicture": "https://i.imgur.com/Xg2FWvl.jpg",
+        "socialMedia": {
+            "twitter": "https://twitter.com/Leozaur",
+            "youtube": "https://www.youtube.com/user/Leozaurable",
+            "twitch": "https://www.twitch.tv/Leoz"
+        }
     },
     "rythian": {
         "displayName": "Rythian",
-        "profilePicture": "https://i.imgur.com/0AxAIQq.jpg"
+        "profilePicture": "https://i.imgur.com/0AxAIQq.jpg",
+        "socialMedia": {
+            "twitter": "https://twitter.com/IAmRythian",
+            "youtube": "https://www.youtube.com/user/yogscastrythian",
+            "twitch": "http://www.twitch.tv/Rythian"
+        }
     },
     "mousie": {
         "displayName": "Mousie",
-        "profilePicture": "https://i.imgur.com/cIRdiv5.png"
+        "profilePicture": "https://i.imgur.com/cIRdiv5.png",
+        "socialMedia": {
+            "twitter": "https://twitter.com/MissMousieMouse",
+            "youtube": "https://www.youtube.com/channel/UC9sjOOmRyRS97aRRlyZw5Lw",
+            "twitch": "https://www.twitch.tv/mousie"
+        }
     },
     "daltos": {
         "displayName": "Daltos",
-        "profilePicture": "https://i.imgur.com/AN7qKwI.jpg"
+        "profilePicture": "https://i.imgur.com/AN7qKwI.jpg",
+        "socialMedia": {
+            "twitter": "https://twitter.com/IAmDaltos",
+            "youtube": "https://www.youtube.com/user/llamalicious1234",
+            "twitch": "https://www.twitch.tv/daltos"
+        }
     },
     "ravs": {
         "displayName": "Ravs",
-        "profilePicture": "https://i.imgur.com/n7Qdnwx.png"
+        "profilePicture": "https://i.imgur.com/n7Qdnwx.png",
+        "socialMedia": {
+            "twitter": "https://twitter.com/Ravsy_",
+            "twitch": "https://www.twitch.tv/ravs_"
+        }
     },
     "geestar": {
         "displayName": "Geestar",
-        "profilePicture": "https://i.imgur.com/lbLlWwh.png"
+        "profilePicture": "https://i.imgur.com/lbLlWwh.png",
+        "socialMedia": {
+            "twitter": "https://twitter.com/Geestargames",
+            "twitch": "https://www.twitch.tv/geestargames"
+        }
     },
     "nilesy": {
         "displayName": "Nilesy",
-        "profilePicture": "https://i.imgur.com/eHZOSKs.jpg"
+        "profilePicture": "https://i.imgur.com/eHZOSKs.jpg",
+        "socialMedia": {
+            "twitter": "https://twitter.com/twirlyswirly",
+            "youtube": "http://www.youtube.com/user/NilesyRocks",
+            "twitch": "http://www.twitch.tv/nilesy"
+        }
     },
     "zylus": {
         "displayName": "Zylus",
-        "profilePicture": "https://i.imgur.com/TRYwdCX.png"
+        "profilePicture": "https://i.imgur.com/TRYwdCX.png",
+        "socialMedia": {
+            "twitter": "https://twitter.com/IAmZylus",
+            "youtube": "https://www.youtube.com/user/MrZylus",
+            "twitch": "http://www.twitch.tv/zylush"
+        }
     },
     "panda": {
         "displayName": "Panda",
-        "profilePicture": "https://i.imgur.com/lGrh77t.jpg"
+        "profilePicture": "https://i.imgur.com/lGrh77t.jpg",
+        "socialMedia": {
+            "twitter": "https://twitter.com/hybridpanda",
+            "youtube": "https://www.youtube.com/user/hybridpanda",
+            "twitch": "http://www.twitch.tv/hybridpanda"
+        }
     },
     "rambler": {
         "displayName": "Alex The Rambler",
-        "profilePicture": "https://i.imgur.com/nNIFm8r.jpg"
+        "profilePicture": "https://i.imgur.com/nNIFm8r.jpg",
+        "socialMedia": {
+            "twitter": "https://twitter.com/TheRambler146",
+            "youtube": "https://www.youtube.com/user/therambler146",
+            "twitch": "https://www.twitch.tv/therambler146"
+        }
     },
     "harry": {
         "displayName": "Harry",
-        "profilePicture": "https://i.imgur.com/B9Vd68J.jpg"
+        "profilePicture": "https://i.imgur.com/B9Vd68J.jpg",
+        "socialMedia": {
+            "twitter": "https://twitter.com/barryharryy",
+            "youtube": "http://youtube.com/VeteranHarry",
+            "twitch": "https://www.twitch.tv/veteranharry"
+        }
     },
     "pyrion": {
         "displayName": "Pyrion Flax",
-        "profilePicture": "https://i.imgur.com/mM8ehyJ.jpg"
+        "profilePicture": "https://i.imgur.com/mM8ehyJ.jpg",
+        "socialMedia": {
+            "twitter": "https://twitter.com/PyrionFlax",
+            "youtube": "https://www.youtube.com/user/tedhimself",
+            "twitch": "http://www.twitch.tv/pyrionflax"
+        }
     }
 }

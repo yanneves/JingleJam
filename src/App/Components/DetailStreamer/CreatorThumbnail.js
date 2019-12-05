@@ -1,9 +1,9 @@
 import React from 'react'
-import StreamerDetails from './StreamerDetails'
+import {StreamerDetails} from './StreamerDetails'
 import { Stream } from 'stream';
 import { thisExpression } from '@babel/types';
 
-export default class CreatorThumbnail extends React.Component 
+class CreatorThumbnail extends React.Component 
 {
 
     render(){
@@ -18,3 +18,5 @@ export default class CreatorThumbnail extends React.Component
         
     }
 }
+
+export {CreatorThumbnail};
