@@ -20,6 +20,9 @@
                                 "twitch": {
                                     "id": "515641175",
                                     "time": "00h00m00s"
+                                },
+                                "youtube": {
+                                    "id": "RuCn_cRCItU"
                                 }
                             }
                         },
@@ -34,6 +37,9 @@
                                 "twitch": {
                                     "id": "515688440",
                                     "time": "00h00m00s"
+                                },
+                                "youtube": {
+                                    "id": "nfA74ye0h6E"
                                 }
                             }
                         },
@@ -48,6 +54,9 @@
                                 "twitch": {
                                     "id": "515749513",
                                     "time": "00h00m00s"
+                                },
+                                "youtube": {
+                                    "id": "eu2o1ZUA1sg"
                                 }
                             }
                         },
@@ -62,6 +71,9 @@
                                 "twitch": {
                                     "id": "515835180",
                                     "time": "00h00m00s"
+                                },
+                                "youtube": {
+                                    "id": "DsLQ2XRt2kU"
                                 }
                             }
                         }
@@ -77,7 +89,12 @@
                             "starring": ["bouphe", "lydia"],
                             "duration": 1,
                             "style": "blue",
-                            "vods": {}
+                            "vods": {
+                                "twitch": {
+                                    "id": "516074559",
+                                    "time": "00h00m00s"
+                                }
+                            }
                         },
                         {
                             "title": "feed a cow for christmas",
@@ -87,7 +104,12 @@
                             "starring": ["lewis", "duncan", "ben", "spiff"],
                             "duration": 1,
                             "style": "pink",
-                            "vods": {}
+                            "vods": {
+                                "twitch": {
+                                    "id": "516110375",
+                                    "time": "00h00m00s"
+                                }
+                            }
                         },
                         {
                             "title": "hat films christmas album",
@@ -96,7 +118,12 @@
                             "starring": ["hatfilms", "sam"],
                             "duration": 2,
                             "style": "white",
-                            "vods": {}
+                            "vods": {
+                                "twitch": {
+                                    "id": "516164670",
+                                    "time": "00h00m00s"
+                                }
+                            }
                         }
                     ]
                 },
@@ -111,7 +138,12 @@
                             "starring": ["lewis", "simon", "duncan", "tom", "ben", "rtgame", "pedguin", "leo", "rythian", "spiff", "lydia", "bouphe", "mousie", "sips", "daltos", "ravs", "geestar"],
                             "duration": 4,
                             "style": "pink",
-                            "vods": {}
+                            "vods": {
+                                "twitch": {
+                                    "id": "516484629",
+                                    "time": "00h00m00s"
+                                }
+                            }
                         }
                     ]
                 },
@@ -125,7 +157,12 @@
                             "starring": ["lewis", "spiff"],
                             "duration": 1,
                             "style": "blue",
-                            "vods": {}
+                            "vods": {
+                                "twitch": {
+                                    "id": "516917749",
+                                    "time": "00h00m00s"
+                                }
+                            }
                         },
                         {
                             "title": "hat films suck at painting",
@@ -134,7 +171,12 @@
                             "starring": ["hatfilms", "bouphe"],
                             "duration": 1,
                             "style": "pink",
-                            "vods": {}
+                            "vods": {
+                                "twitch": {
+                                    "id": "516957023",
+                                    "time": "00h00m00s"
+                                }
+                            }
                         },
                         {
                             "title": "the jingle jerk off",
@@ -143,7 +185,12 @@
                             "starring": ["tom", "ben"],
                             "duration": 1,
                             "style": "white",
-                            "vods": {}
+                            "vods": {
+                                "twitch": {
+                                    "id": "517014697",
+                                    "time": "00h00m00s"
+                                }
+                            }
                         },
                         {
                             "title": "protessional strem",
@@ -152,7 +199,12 @@
                             "starring": ["nilesy", "zylus", "ravs", "panda", "rythian"],
                             "duration": 1,
                             "style": "blue",
-                            "vods": {}
+                            "vods": {
+                                "twitch": {
+                                    "id": "517090918",
+                                    "time": "00h00m00s"
+                                }
+                            }
                         }
                     ]
                 },
