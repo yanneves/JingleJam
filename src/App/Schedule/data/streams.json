@@ -238,7 +238,12 @@
                             "starring": ["lewis", "lydia"],
                             "duration": 1,
                             "style": "white",
-                            "vods": {}
+                            "vods": {
+                                "twitch": {
+                                    "id": "517395742",
+                                    "time": "00h00m00s"
+                                }
+                            }
                         },
                         {
                             "title": "civilization 5 live at 5",
