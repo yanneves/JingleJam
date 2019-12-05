@@ -111,6 +111,9 @@
                                 "twitch": {
                                     "id": "516110375",
                                     "time": "00h00m00s"
+                                },
+                                "youtube": {
+                                    "id": "Sl0yKsYer_I"
                                 }
                             }
                         },
@@ -221,7 +224,12 @@
                             "starring": [],
                             "duration": 1,
                             "style": "blue",
-                            "vods": {}
+                            "vods": {
+                                "twitch": {
+                                    "id": "517362880",
+                                    "time": "00h00m00s"
+                                }
+                            }
                         },
                         {
                             "title": "christmas mysteries",
