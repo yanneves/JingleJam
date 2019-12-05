@@ -303,6 +303,14 @@ html, body {
                 background: #ffffff;
                 color: $streamWhiteBlueText;
             }
+            .profile {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                box-sizing: border-box;
+                padding: 15px;
+            }
             .details {
                 width: 100%;
                 height: auto;
@@ -461,6 +469,35 @@ html, body {
                     color: $youtube;
                 }
             }
+        }
+    }
+}
+
+.detailTitle {
+    a {
+        padding: 20px;
+        font-size: 30px;
+        width: 30px;
+        border-radius: 50%;
+        &.facebook {
+            background: #3b5998;
+            color: #ffffff;
+        }
+        &.twitter {
+            background: #55acee;
+            color: #ffffff;
+        }
+        &.youtube {
+            background: $youtube;
+            color: #ffffff;
+        }
+        &.twitch {
+            background: $twitch;
+            color: #ffffff;
+        }
+        &.reddit {
+            background: #ff5700;
+            color: #ffffff;
         }
     }
 }

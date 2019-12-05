@@ -100,6 +100,7 @@
                         .yog {
                             cursor: pointer;
                             .tooltip {
+                                display: block;
                                 pointer-events: none;
                                 opacity: 0;
                                 position: absolute;
@@ -108,7 +109,7 @@
                                 left: 50%;
                                 transform: translate(-50%, 0);
                                 background: #ffffff;
-                                color: rgb(166,17,59);
+                                color: rgb(166, 17, 59);
                                 padding: 0 10px;
                                 height: 20px;
                                 border-radius: 10px;
@@ -118,10 +119,8 @@
                                 font-size: 1rem;
                                 transition: .2s ease;
                             }
-                            &:hover {
-                                .tooltip {
-                                    opacity: 1;
-                                }
+                            &:hover .tooltip {
+                                opacity: 1;
                             }
                         }
                     }
@@ -140,6 +139,7 @@
             }
         }
     }
+
 }
 
 @media only screen and (min-width: 1175px){

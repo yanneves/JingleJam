@@ -12,7 +12,7 @@
 * ~~Responsive design~~
 * ~~Add donation button~~
 * Fix daylight savings time being wrong in Australia
-* Detailed creator profiles
+* Detailed creator profiles - Working on this component (carddeath (CharlieIllyria))
 * Push notifications (if possible?)
 * Watched list for VODs. Be able to mark which VODs you've seen etc.
 

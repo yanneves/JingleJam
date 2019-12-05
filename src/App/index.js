@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 import {Switch} from 'react-router';
 
 import {Home, ExpandedStream} from './Schedule';
+import {CreatorProfile} from './Components/DetailStreamer/StreamerDetails';
 
 import pinkLogo from './Schedule/logo_pink.png';
 
@@ -56,6 +57,7 @@ class App extends Component {
                 <Home toggleLoading={this.toggleLoading} />
                 <Switch>
                     <Route path="/stream/:streamid" exact render={(props) => <ExpandedStream {...props} />} />
+                    <Route path="/creator/:creatorid" exact render={(props) => <CreatorProfile {...props} />} />
                 </Switch>
                 {
                     this.state.loading ?
