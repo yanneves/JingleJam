@@ -486,7 +486,13 @@ class ExpandedStream extends Component {
                             {this.state.stream.pretitle !== undefined ? <h3>{this.state.stream.pretitle}</h3> : null}
                             {this.state.stream.subtitle !== undefined ? <h4>{this.state.stream.subtitle}</h4> : null}
                             {this.state.stream.subtitle2 !== undefined ? <h5>{this.state.stream.subtitle2}</h5> : null}
-                            {this.props.watched.indexOf(this.state.idString) === -1 ? <div className="watched" onClick={() => this.props.addWatched(this.state.idString)}><FiCheck /></div> : <div className="watched filled" onClick={() => this.props.removeWatched(this.state.idString)}><FiCheck /></div>}
+                            {
+                                this.state.state === "ended" ?
+                                    this.props.watched.indexOf(this.state.idString) === -1 ?
+                                        <div className="watched" onClick={() => this.props.addWatched(this.state.idString)}><FiCheck /></div>
+                                    : <div className="watched filled" onClick={() => this.props.removeWatched(this.state.idString)}><FiCheck /></div>
+                                : null
+                            }
                             <div className="starring">
                                 {
                                     this.state.stream.starring === undefined ? null :
