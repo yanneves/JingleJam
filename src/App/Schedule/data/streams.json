@@ -299,7 +299,12 @@
                             "starring": ["simon", "tom", "harry"],
                             "duration": 1,
                             "style": "white",
-                            "vods": {}
+                            "vods": {
+                                "twitch": {
+                                    "id": "517885206",
+                                    "time": "00h00m00s"
+                                }
+                            }
                         },
                         {
                             "title": "scotland vs sweden",
@@ -308,7 +313,12 @@
                             "starring": ["rythian", "ravs"],
                             "duration": 1,
                             "style": "blue",
-                            "vods": {}
+                            "vods": {
+                                "twitch": {
+                                    "id": "517949155",
+                                    "time": "00h00m00s"
+                                }
+                            }
                         }
                     ]
                 },
