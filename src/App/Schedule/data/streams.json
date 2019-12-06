@@ -271,7 +271,12 @@
                             "starring": ["lewis", "rambler"],
                             "duration": 1,
                             "style": "blue",
-                            "vods": {}
+                            "vods": {
+                                "twitch": {
+                                    "id": "517772965",
+                                    "time": "00h00m00s"
+                                }
+                            }
                         },
                         {
                             "title": "risk",
