@@ -367,8 +367,8 @@ class Stream extends Component {
         return(
             <article onClick={this.expandStream} className={`stream _${this.props.startHour} _${this.props.date%7} duration_${this.props.duration} ${this.props.style}`}>
                 {this.props.pretitle !== undefined ? <h3>{this.props.pretitle}</h3> : null}
-                <h1>{this.props.title}</h1>
-                <h4>{this.props.subtitle}</h4>
+                {this.props.title !== undefined ? <h1>{this.props.title}</h1> : null}
+                {this.props.subtitle !== undefined ? <h4>{this.props.subtitle}</h4> : null}
                 {this.props.subtitle2 !== undefined ? <h5>{this.props.subtitle2}</h5> : null}
             </article>
         )

@@ -236,5 +236,31 @@
             "youtube": "https://www.youtube.com/user/tedhimself",
             "twitch": "http://www.twitch.tv/pyrionflax"
         }
+    },
+    "wilsonator": {
+        "displayName": "Wilsonator",
+        "profilePicture": "https://i.imgur.com/w3nl9NY.jpg",
+        "socialMedia": {
+            "twitter": "https://twitter.com/WilsonatorYT",
+            "youtube": "https://www.youtube.com/user/WilsonatorYT",
+            "twitch": "https://www.twitch.tv/wilsonatoryt"
+        }
+    },
+    "checkpoint": {
+        "displayName": "Checkpoint",
+        "profilePicture": "https://i.imgur.com/YfPJyyR.jpg",
+        "socialMedia": {
+            "twitter": "https://twitter.com/realcheckpoint",
+            "youtube": "https://www.youtube.com/user/OfficialCheckpoint",
+            "twitch": "https://www.twitch.tv/checkpoint"
+        }
+    },
+    "fiona": {
+        "displayName": "Fiona",
+        "profilePicture": "https://i.imgur.com/pcmrCQE.jpg",
+        "socialMedia": {
+            "twitter": "https://twitter.com/Fiona_Riches",
+            "twitch": "https://www.twitch.tv/fionariches"
+        }
     }
 }

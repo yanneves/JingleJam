@@ -46,7 +46,34 @@ html, body {
             border-radius: 20px;
         }
         .controls {
-            // add styling once second week is released
+            position: fixed;
+            pointer-events: none;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            article {
+                height: 50px;
+                width: 50px;
+                background: #ffffff;
+                font-size: 2rem;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: 50%;
+                position: absolute;
+                transform: translate(0, -50%);
+                box-shadow: 0 0 15px 0 rgba(0,0,0,0.5);
+                pointer-events: auto;
+                cursor: pointer;
+                &.next {
+                    right: 5px;
+                }
+                &.prev {
+                    left: 5px;
+                }
+            }
         }
         header {
             width: 100%;
@@ -85,7 +112,7 @@ html, body {
             display: grid;
             flex-grow: 1;
             grid-template-columns: 55px repeat(7, calc(100% - 65px));
-            grid-template-rows: 55px repeat(4, minmax(160px, 1fr));
+            grid-template-rows: 55px repeat(8, minmax(80px, 1fr));
             grid-gap: 10px;
             position: relative;
             overflow-x: auto;
@@ -126,15 +153,31 @@ html, body {
             }
             ._11 {
                 grid-row: 2;
+                grid-row-end: span 2;
             }
-            ._14 {
+            ._12 {
                 grid-row: 3;
             }
-            ._17 {
+            ._14 {
                 grid-row: 4;
+                grid-row-end: span 2;
+            }
+            ._15 {
+                grid-row: 5;
+            }
+            ._17 {
+                grid-row: 6;
+                grid-row-end: span 2;
+            }
+            ._18 {
+                grid-row: 7;
             }
             ._20 {
-                grid-row: 5
+                grid-row: 8;
+                grid-row-end: span 2;
+            }
+            ._21 {
+                grid-row: 9;
             }
             .day {
                 display: flex;
@@ -144,6 +187,7 @@ html, body {
                 background: #ffffff;
                 color: $blue;
                 font-size: 1.4rem;
+
                 sub {
                     font-size: 1rem;
                     margin-top: 4px;
@@ -186,10 +230,10 @@ html, body {
                     margin: 0;
                     font-size: 2rem;
                     line-height: 1.7rem;
-                    margin-bottom: 15px;
                 }
                 h4, h5 {
                     margin: 0;
+                    margin-top: 15px;
                     font-size: 1.5rem;
                     line-height: 1.4rem;
                 }
@@ -202,17 +246,20 @@ html, body {
                     margin: 0;
                     margin-bottom: 10px;
                 }
-                &.duration_1 {
+                &.duration_half {
                     grid-row-end: span 1;
                 }
-                &.duration_2 {
+                &.duration_1 {
                     grid-row-end: span 2;
                 }
+                &.duration_2 {
+                    grid-row-end: span 4;
+                }
                 &.duration_3 {
-                    grid-row-end: span 3;
+                    grid-row-end: span 6;
                 }
                 &.duration_4 {
-                    grid-row-end: span 4;
+                    grid-row-end: span 8;
                 }
                 &.blue {
                     background: $streamBlueBg;

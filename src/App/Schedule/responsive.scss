@@ -145,6 +145,16 @@
 @media only screen and (min-width: 1175px){
     html, body {
         .home {
+            .controls {
+                article {
+                    &.next {
+                        right: 15px;
+                    }
+                    &.left {
+                        left: 15px;
+                    }
+                }
+            }
             .donate {
                 top: auto;
                 right: 25px;
