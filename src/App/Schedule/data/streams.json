@@ -252,7 +252,12 @@
                             "starring": ["lewis", "duncan", "rythian", "spiff"],
                             "duration": 2,
                             "style": "pink",
-                            "vods": {}
+                            "vods": {
+                                "twitch": {
+                                    "id": "517451698",
+                                    "time": "00h00m00s"
+                                }
+                            }
                         }
                     ]
                 },
