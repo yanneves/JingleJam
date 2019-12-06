@@ -282,7 +282,7 @@
                             "title": "risk",
                             "subtitle": "yes, the board game",
                             "startHour": 14,
-                            "starring": [],
+                            "starring": ["ben", "daltos", "duncan", "rambler", "spiff"],
                             "duration": 1,
                             "style": "pink",
                             "vods": {}
