@@ -167,6 +167,9 @@
                                 "twitch": {
                                     "id": "516917749",
                                     "time": "00h00m00s"
+                                },
+                                "youtube": {
+                                    "id": "0sLCx_mOrtg"
                                 }
                             }
                         },
@@ -330,16 +333,21 @@
                             "subtitle": "lewis, leo, ped and ravs",
                             "startHour": 11,
                             "starring": ["lewis", "leo", "pedguin", "ravs"],
-                            "duration": 1,
+                            "duration": 2,
                             "style": "white",
-                            "vods": {}
+                            "vods": {
+                                "twitch": {
+                                    "id": "518239485",
+                                    "time": "00h00m00s"
+                                }
+                            }
                         },
                         {
                             "title": "pre-poker party",
                             "subtitle": "ben and harry",
                             "startHour": 14,
                             "starring": ["ben", "harry"],
-                            "duration": 1,
+                            "duration": 0,
                             "style": "blue",
                             "vods": {}
                         },

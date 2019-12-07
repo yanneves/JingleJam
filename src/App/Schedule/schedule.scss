@@ -246,6 +246,9 @@ html, body {
                     margin: 0;
                     margin-bottom: 10px;
                 }
+                &.duration_0 {
+                    display: none;
+                }
                 &.duration_half {
                     grid-row-end: span 1;
                 }
