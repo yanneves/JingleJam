@@ -184,6 +184,9 @@
                                 "twitch": {
                                     "id": "516957023",
                                     "time": "00h00m00s"
+                                },
+                                "youtube": {
+                                    "id": "jiWVrqC8eVw"
                                 }
                             }
                         },
@@ -333,7 +336,7 @@
                             "subtitle": "lewis, leo, ped and ravs",
                             "startHour": 11,
                             "starring": ["lewis", "leo", "pedguin", "ravs", "spiff"],
-                            "duration": 2,
+                            "duration": 1,
                             "style": "white",
                             "vods": {
                                 "twitch": {
@@ -347,9 +350,14 @@
                             "subtitle": "ben and harry",
                             "startHour": 14,
                             "starring": ["ben", "harry"],
-                            "duration": 0,
+                            "duration": 1,
                             "style": "blue",
-                            "vods": {}
+                            "vods": {
+                                "twitch": {
+                                    "id": "518317285",
+                                    "time": "00h00m00s"
+                                }
+                            }
                         },
                         {
                             "title": "poker tournament",
@@ -360,7 +368,12 @@
                             "starring": ["pyrion", "tom"],
                             "duration": 2,
                             "style": "pink",
-                            "vods": {}
+                            "vods": {
+                                "twitch": {
+                                    "id": "518364020",
+                                    "time": "00h00m00s"
+                                }
+                            }
                         }
                     ]
                 }
