@@ -395,10 +395,15 @@
                             "title": "drink more glurp!",
                             "subtitle": "and jingle jam bundle games",
                             "startHour": 11,
-                            "starring": [],
+                            "starring": ["mousie", "pedguin", "zylus"],
                             "duration": 1,
                             "style": "blue",
-                            "vods": {}
+                            "vods": {
+                                "twitch": {
+                                    "id": "518719497",
+                                    "time": "00h00m00s"
+                                }
+                            }
                         },
                         {
                             "title": "star wars roleplay",
