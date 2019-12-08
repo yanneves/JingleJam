@@ -1,0 +1,708 @@
+{
+  "weeks": [
+    {
+      "meta": {
+        "active": true,
+        "week": 1
+      },
+      "days": [
+        {
+          "date": 1,
+          "streams": [
+            {
+              "title": "decorating the office",
+              "subtitle": "jingle jam office cam",
+              "startHour": 11,
+              "starring": [],
+              "duration": 1,
+              "style": "blue",
+              "vods": {
+                "twitch": {
+                  "id": "515641175",
+                  "time": "00h00m00s"
+                },
+                "youtube": {
+                  "id": "RuCn_cRCItU"
+                }
+              }
+            },
+            {
+              "title": "jingle jam warm up",
+              "subtitle": "tom and ben",
+              "startHour": 14,
+              "starring": ["tom", "ben"],
+              "duration": 1,
+              "style": "white",
+              "vods": {
+                "twitch": {
+                  "id": "515688440",
+                  "time": "00h00m00s"
+                },
+                "youtube": {
+                  "id": "nfA74ye0h6E"
+                }
+              }
+            },
+            {
+              "title": "jingle cats & launch",
+              "subtitle": "lewis and simon",
+              "startHour": 17,
+              "starring": ["lewis", "simon"],
+              "duration": 1,
+              "style": "pink",
+              "vods": {
+                "twitch": {
+                  "id": "515749513",
+                  "time": "00h00m00s"
+                },
+                "youtube": {
+                  "id": "eu2o1ZUA1sg"
+                }
+              }
+            },
+            {
+              "title": "trains and chill",
+              "subtitle": "lewis, duncan and friends",
+              "startHour": 20,
+              "starring": ["lewis", "duncan"],
+              "duration": 1,
+              "style": "blue",
+              "vods": {
+                "twitch": {
+                  "id": "515835180",
+                  "time": "00h00m00s"
+                },
+                "youtube": {
+                  "id": "DsLQ2XRt2kU"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "date": 2,
+          "streams": [
+            {
+              "title": "baubles\nwith bouphe\nand lydia",
+              "subtitle": "and more",
+              "startHour": 11,
+              "starring": ["bouphe", "lydia"],
+              "duration": 1,
+              "style": "blue",
+              "vods": {
+                "twitch": {
+                  "id": "516074559",
+                  "time": "00h00m00s"
+                },
+                "youtube": {
+                  "id": "8vzpNQPsx3c"
+                }
+              }
+            },
+            {
+              "title": "feed a cow for christmas",
+              "subtitle": "farming sim",
+              "subtitle2": "lewis, duncan, ben, spiff",
+              "startHour": 14,
+              "starring": ["lewis", "duncan", "ben", "spiff"],
+              "duration": 1,
+              "style": "pink",
+              "vods": {
+                "twitch": {
+                  "id": "516110375",
+                  "time": "00h00m00s"
+                },
+                "youtube": {
+                  "id": "Sl0yKsYer_I"
+                }
+              }
+            },
+            {
+              "title": "hat films christmas album",
+              "subtitle": "featuring mr sam and the dednutz",
+              "startHour": 17,
+              "starring": ["hatfilms", "sam"],
+              "duration": 2,
+              "style": "white",
+              "vods": {
+                "twitch": {
+                  "id": "516164670",
+                  "time": "00h00m00s"
+                },
+                "youtube": {
+                  "id": "PV3wChtL8zE"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "date": 3,
+          "streams": [
+            {
+              "title": "jingle jam minecraft server day",
+              "pretitle": "lewis, simon, duncan, tom, ben, rtgame, pedguin, leo",
+              "subtitle": "rythian, spiff, lydia, bouphe, mousie, sips, daltos, ravs, geestar",
+              "startHour": 11,
+              "starring": [
+                "lewis",
+                "simon",
+                "duncan",
+                "tom",
+                "ben",
+                "rtgame",
+                "pedguin",
+                "leo",
+                "rythian",
+                "spiff",
+                "lydia",
+                "bouphe",
+                "mousie",
+                "sips",
+                "daltos",
+                "ravs",
+                "geestar"
+              ],
+              "duration": 4,
+              "style": "pink",
+              "vods": {
+                "twitch": {
+                  "id": "516484629",
+                  "time": "00h00m00s"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "date": 4,
+          "streams": [
+            {
+              "title": "jingle jam is perfectly balanced",
+              "subtitle": "lewis and spiff",
+              "startHour": 11,
+              "starring": ["lewis", "spiff"],
+              "duration": 1,
+              "style": "blue",
+              "vods": {
+                "twitch": {
+                  "id": "516917749",
+                  "time": "00h00m00s"
+                },
+                "youtube": {
+                  "id": "0sLCx_mOrtg"
+                }
+              }
+            },
+            {
+              "title": "hat films suck at painting",
+              "subtitle": "with bouphe",
+              "startHour": 14,
+              "starring": ["hatfilms", "bouphe"],
+              "duration": 1,
+              "style": "pink",
+              "vods": {
+                "twitch": {
+                  "id": "516957023",
+                  "time": "00h00m00s"
+                },
+                "youtube": {
+                  "id": "jiWVrqC8eVw"
+                }
+              }
+            },
+            {
+              "title": "the jingle jerk off",
+              "subtitle": "tom and ben",
+              "startHour": 17,
+              "starring": ["tom", "ben"],
+              "duration": 1,
+              "style": "white",
+              "vods": {
+                "twitch": {
+                  "id": "517014697",
+                  "time": "00h00m00s"
+                }
+              }
+            },
+            {
+              "title": "protessional strem",
+              "subtitle": "nilesy, zylus, ravs, panda and rythian",
+              "startHour": 20,
+              "starring": ["nilesy", "zylus", "ravs", "panda", "rythian"],
+              "duration": 1,
+              "style": "blue",
+              "vods": {
+                "twitch": {
+                  "id": "517090918",
+                  "time": "00h00m00s"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "date": 5,
+          "streams": [
+            {
+              "title": "community dragon slayer",
+              "subtitle": "old school runescape",
+              "startHour": 11,
+              "starring": [],
+              "duration": 1,
+              "style": "blue",
+              "vods": {
+                "twitch": {
+                  "id": "517362880",
+                  "time": "00h00m00s"
+                }
+              }
+            },
+            {
+              "title": "christmas mysteries",
+              "subtitle": "lewis, lydia and guests",
+              "startHour": 14,
+              "starring": ["lewis", "lydia"],
+              "duration": 1,
+              "style": "white",
+              "vods": {
+                "twitch": {
+                  "id": "517395742",
+                  "time": "00h00m00s"
+                }
+              }
+            },
+            {
+              "title": "civilization 5 live at 5",
+              "subtitle": "lewis, duncan, rythian, spiff and more!",
+              "startHour": 17,
+              "starring": ["lewis", "duncan", "rythian", "spiff"],
+              "duration": 2,
+              "style": "pink",
+              "vods": {
+                "twitch": {
+                  "id": "517451698",
+                  "time": "00h00m00s"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "date": 6,
+          "streams": [
+            {
+              "title": "team double awkward",
+              "subtitle": "lewis and alex the rambler",
+              "startHour": 11,
+              "starring": ["lewis", "rambler"],
+              "duration": 1,
+              "style": "blue",
+              "vods": {
+                "twitch": {
+                  "id": "517772965",
+                  "time": "00h00m00s"
+                }
+              }
+            },
+            {
+              "title": "risk",
+              "subtitle": "yes, the board game",
+              "startHour": 14,
+              "starring": ["ben", "daltos", "duncan", "rambler", "spiff"],
+              "duration": 1,
+              "style": "pink",
+              "vods": {
+                "twitch": {
+                  "id": "517824328",
+                  "time": "00h00m00s"
+                }
+              }
+            },
+            {
+              "title": "chilluminati nativity",
+              "subtitle": "simon, tom and harry",
+              "startHour": 17,
+              "starring": ["simon", "tom", "harry"],
+              "duration": 1,
+              "style": "white",
+              "vods": {
+                "twitch": {
+                  "id": "517885206",
+                  "time": "00h00m00s"
+                }
+              }
+            },
+            {
+              "title": "scotland vs sweden",
+              "subtitle": "rythian and ravs",
+              "startHour": 20,
+              "starring": ["rythian", "ravs"],
+              "duration": 1,
+              "style": "blue",
+              "vods": {
+                "twitch": {
+                  "id": "517949155",
+                  "time": "00h00m00s"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "date": 7,
+          "streams": [
+            {
+              "title": "crimbo colony crew",
+              "subtitle": "lewis, leo, ped and ravs",
+              "startHour": 11,
+              "starring": ["lewis", "leo", "pedguin", "ravs", "spiff"],
+              "duration": 1,
+              "style": "white",
+              "vods": {
+                "twitch": {
+                  "id": "518239485",
+                  "time": "00h00m00s"
+                }
+              }
+            },
+            {
+              "title": "pre-poker party",
+              "subtitle": "ben and harry",
+              "startHour": 14,
+              "starring": ["ben", "harry"],
+              "duration": 1,
+              "style": "blue",
+              "vods": {
+                "twitch": {
+                  "id": "518317285",
+                  "time": "00h00m00s"
+                }
+              }
+            },
+            {
+              "title": "poker tournament",
+              "pretitle": "jingle jam 2019",
+              "subtitle": "hosted by pyrionflax and tom clark",
+              "subtitle2": "featuring loads of yogscast",
+              "startHour": 17,
+              "starring": ["pyrion", "tom"],
+              "duration": 2,
+              "style": "pink",
+              "vods": {
+                "twitch": {
+                  "id": "518364020",
+                  "time": "00h00m00s"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "meta": {
+        "active": true,
+        "week": 2
+      },
+      "days": [
+        {
+          "date": 8,
+          "streams": [
+            {
+              "title": "drink more glurp!",
+              "subtitle": "and jingle jam bundle games",
+              "startHour": 11,
+              "starring": ["mousie", "pedguin", "zylus"],
+              "duration": 1,
+              "style": "blue",
+              "vods": {
+                "twitch": {
+                  "id": "518719497",
+                  "time": "00h00m00s"
+                }
+              }
+            },
+            {
+              "title": "star wars roleplay",
+              "subtitle": "featuring bouphe and spiffingbrit",
+              "startHour": 14,
+              "starring": ["bouphe", "spiff"],
+              "duration": 1,
+              "style": "white",
+              "vods": {}
+            },
+            {
+              "title": "high rollers",
+              "subtitle": "christmas special",
+              "startHour": 17,
+              "starring": [],
+              "duration": 1,
+              "style": "pink",
+              "vods": {}
+            },
+            {
+              "title": "rust server madness",
+              "subtitle": "pyrion, spiffingbrit and wilsonator",
+              "startHour": 20,
+              "starring": ["pyrion", "spiff", "wilsonator"],
+              "duration": 1,
+              "style": "blue",
+              "vods": {}
+            }
+          ]
+        },
+        {
+          "date": 9,
+          "streams": [
+            {
+              "title": "xmas studs",
+              "subtitle": "simon, nina and bouphe",
+              "startHour": 11,
+              "starring": ["simon", "nina", "bouphe"],
+              "duration": 1,
+              "style": "blue",
+              "vods": {}
+            },
+            {
+              "title": "t.a.b.s. h.o.r.s.e.",
+              "subtitle": "tournament with tom and checkpoint",
+              "startHour": 14,
+              "starring": ["tom", "checkpoint"],
+              "duration": 1,
+              "style": "pink",
+              "vods": {}
+            },
+            {
+              "title": "nazis vs the good guys",
+              "subtitle": "lewis, pyrion, spiffingbrit and alex",
+              "startHour": 17,
+              "starring": ["lewis", "pyrion", "spiff", "rambler"],
+              "duration": 1,
+              "style": "white",
+              "vods": {}
+            },
+            {
+              "title": "xmas just dance",
+              "subtitle": "hosted by mousie and zylus",
+              "startHour": 20,
+              "starring": ["mousie", "zylus"],
+              "duration": 1,
+              "style": "blue",
+              "vods": {}
+            }
+          ]
+        },
+        {
+          "date": 10,
+          "streams": [
+            {
+              "title": "cooking!",
+              "pretitle": "hat films cook the world's biggest cakes!",
+              "subtitle": "how to: christmas dinner",
+              "subtitle2": "lydia, fiona and bouphe",
+              "startHour": 11,
+              "starring": ["hatfilms", "lydia", "fiona", "bouphe"],
+              "duration": 2,
+              "style": "pink",
+              "vods": {}
+            },
+            {
+              "title": "terraria",
+              "pretitle": "survival world with pedguin and friends",
+              "subtitle": "custom christmas minigames",
+              "startHour": 17,
+              "starring": ["pedguin"],
+              "duration": 2,
+              "style": "white",
+              "vods": {}
+            }
+          ]
+        },
+        {
+          "date": 11,
+          "streams": [
+            {
+              "title": "bodega radio play live",
+              "subtitle": "pyrion and guests!",
+              "startHour": 11,
+              "starring": ["pyrion"],
+              "duration": 1,
+              "style": "blue",
+              "vods": {}
+            },
+            {
+              "title": "pre-party karaoke",
+              "subtitle": "(probably more benga)",
+              "startHour": 14,
+              "starring": [],
+              "duration": 1,
+              "style": "white",
+              "vods": {}
+            },
+            {
+              "title": "karaoke night",
+              "subtitle": "presented by twitch sings",
+              "startHour": 17,
+              "starring": [],
+              "duration": 2,
+              "style": "pink",
+              "vods": {}
+            }
+          ]
+        },
+        {
+          "date": 12,
+          "streams": [
+            {
+              "title": "wrestling yogs rumble",
+              "subtitle": "hosted by duncan",
+              "startHour": 11,
+              "starring": ["duncan"],
+              "duration": 1,
+              "style": "blue",
+              "vods": {}
+            },
+            {
+              "title": "irl christmas market",
+              "subtitle": "lewis, sips and special guests!",
+              "startHour": 14,
+              "starring": ["lewis", "sips"],
+              "duration": 1,
+              "style": "white",
+              "vods": {}
+            },
+            {
+              "title": "gmod build off special",
+              "subtitle": "a whole bunch of yogs!",
+              "startHour": 17,
+              "starring": [],
+              "duration": 1,
+              "style": "pink",
+              "vods": {}
+            },
+            {
+              "title": "recreating christmas movie scenes",
+              "subtitle": "in sims 4",
+              "startHour": 20,
+              "starring": [],
+              "duration": 1,
+              "style": "blue",
+              "vods": {}
+            }
+          ]
+        },
+        {
+          "date": 13,
+          "streams": [
+            {
+              "title": "3 dads and an irishman",
+              "subtitle": "ben, sips, pyrion and rtgames",
+              "startHour": 11,
+              "starring": ["ben", "sips", "pyrion", "rtgame"],
+              "duration": 1,
+              "style": "blue",
+              "vods": {}
+            },
+            {
+              "title": "pokemon go in bristol!",
+              "subtitle": "pedguin, zylus, mousie, leo and geestar",
+              "startHour": 14,
+              "starring": ["pedguin", "zylus", "mousie", "leo", "geestar"],
+              "duration": 1,
+              "style": "pink",
+              "vods": {}
+            },
+            {
+              "title": "sweaty shooters",
+              "subtitle": "sips, ravs, pflax and gee",
+              "startHour": 17,
+              "starring": ["sips", "ravs", "pyrion", "geestar"],
+              "duration": 1,
+              "style": "white",
+              "vods": {}
+            },
+            {
+              "title": "dead by daylight",
+              "subtitle": "competitive spooks!",
+              "startHour": 20,
+              "starring": [],
+              "duration": 1,
+              "style": "blue",
+              "vods": {}
+            }
+          ]
+        },
+        {
+          "date": 14,
+          "streams": [
+            {
+              "title": "morning tea and chat",
+              "subtitle": "lewis and friends",
+              "startHour": 11,
+              "starring": ["lewis"],
+              "duration": 1,
+              "style": "blue",
+              "vods": {}
+            },
+            {
+              "title": "hat films in london",
+              "startHour": 14,
+              "starring": ["hatfilms"],
+              "duration": "half",
+              "style": "white",
+              "vods": {}
+            },
+            {
+              "title": "gingerbread house making",
+              "startHour": 15,
+              "starring": [],
+              "duration": "half",
+              "style": "blue",
+              "vods": {}
+            },
+            {
+              "title": "games night boardgames",
+              "subtitle": "funemployed snake oil werewolf!",
+              "startHour": 17,
+              "starring": [],
+              "duration": 1,
+              "style": "pink",
+              "vods": {}
+            },
+            {
+              "title": "overwatch central",
+              "subtitle": "overwatch in-house",
+              "startHour": 20,
+              "starring": [],
+              "duration": 1,
+              "style": "blue",
+              "vods": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "meta": {
+        "active": false,
+        "week": 3
+      },
+      "days": []
+    },
+    {
+      "meta": {
+        "active": false,
+        "week": 4
+      },
+      "days": []
+    },
+    {
+      "meta": {
+        "active": false,
+        "week": 5
+      },
+      "days": []
+    }
+  ]
+}

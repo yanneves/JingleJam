@@ -1,0 +1,292 @@
+@media only screen and (min-width: 330px) {
+  html,
+  body {
+    .home {
+      section.schedule {
+        grid-template-columns: 55px repeat(7, 200px);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  html,
+  body {
+    .home {
+      header {
+        h1 {
+          span,
+          div {
+            display: block;
+          }
+          span {
+            background: #081633;
+            width: 3px;
+            height: 34px;
+            margin: 0 13px;
+          }
+          div {
+            sup {
+              vertical-align: top;
+              font-size: 0.9rem;
+              line-height: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  html,
+  body {
+    .home .donate {
+      bottom: auto;
+      top: calc(75px / 2);
+      left: auto;
+      right: 25px;
+      transform: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  html,
+  body {
+    .home .donate {
+      cursor: pointer;
+    }
+    .home section.schedule {
+      .stream {
+        transition: opacity 0.2s ease;
+      }
+      pointer-events: none;
+      & > .stream {
+        pointer-events: auto;
+      }
+      &:hover > .stream {
+        opacity: 0.7;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+    .expanded {
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      .close {
+        cursor: pointer;
+      }
+      .bg {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        background: #000000;
+        opacity: 0.6;
+        display: block;
+      }
+      .content {
+        z-index: 101;
+        min-height: auto;
+        height: auto;
+        width: 400px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.5);
+        .details {
+          .starring {
+            height: 100px;
+            padding: 0 10px;
+            .yog {
+              cursor: pointer;
+              .tooltip {
+                display: block;
+                pointer-events: none;
+                opacity: 0;
+                position: absolute;
+                white-space: nowrap;
+                top: calc(100% + 5px);
+                left: 50%;
+                transform: translate(-50%, 0);
+                background: #ffffff;
+                color: rgb(166, 17, 59);
+                padding: 0 10px;
+                height: 20px;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1rem;
+                transition: 0.2s ease;
+              }
+              &:hover .tooltip {
+                opacity: 1;
+              }
+            }
+          }
+        }
+        &.white {
+          .details .starring .yog .tooltip {
+            background: #064372;
+            color: #ffffff;
+          }
+        }
+        &.blue {
+          .details .starring .yog .tooltip {
+            color: #005491;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1175px) {
+  html,
+  body {
+    .home {
+      .controls {
+        article {
+          &.next {
+            right: 15px;
+          }
+          &.prev {
+            left: 15px;
+          }
+        }
+      }
+      .donate {
+        top: auto;
+        right: 25px;
+        bottom: 25px;
+      }
+      header {
+        height: 100px;
+        flex-direction: row;
+        padding: 0;
+        .logo {
+          width: 275px;
+          height: auto;
+          margin-right: 60px;
+        }
+        h1 {
+          font-size: 4rem;
+          width: auto;
+          padding: 0 75px;
+          margin: 0;
+          span {
+            width: 5px;
+            height: 64px;
+            margin: 3px 25px;
+          }
+          div {
+            sup {
+              font-size: 2rem;
+              line-height: 3.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  html,
+  body {
+    .expanded {
+      .close {
+        right: -15px;
+        top: -15px;
+      }
+      .content {
+        width: 1200px;
+        height: 425px;
+        flex-direction: row;
+        .details {
+          height: 100%;
+          width: 50%;
+          padding: 25px;
+        }
+        .vods {
+          height: 100%;
+          width: 50%;
+          padding: 25px;
+          .iframe_container {
+            display: block;
+          }
+          .countdown {
+            margin: 0;
+          }
+          .live {
+            flex-direction: column;
+            width: auto;
+            h1 {
+              margin: 0;
+              text-align: right;
+              font-size: 3rem;
+              margin-top: 5px;
+              display: block;
+            }
+            .watch {
+              display: none;
+            }
+          }
+          .allvods {
+            width: auto;
+            ul {
+              flex-direction: row;
+              height: 40px;
+              margin-top: 10px;
+              &.toggle {
+                display: flex;
+              }
+              &.mobile {
+                display: none;
+              }
+              li {
+                flex-grow: 1;
+                height: auto;
+                width: auto;
+                font-size: 1.3rem;
+                box-sizing: border-box;
+                cursor: pointer;
+                transition: 0.2s ease;
+                margin: 0;
+                &:first-child {
+                  margin-right: 5px;
+                }
+                &:last-child {
+                  margin-left: 5px;
+                }
+                &:hover {
+                  transform: scale(0.95);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  html,
+  body {
+    .home {
+      .donate {
+        top: 55px;
+        bottom: auto;
+      }
+      section.schedule {
+        width: auto;
+      }
+    }
+  }
+}

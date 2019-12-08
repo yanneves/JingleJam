@@ -1,0 +1,7 @@
+# Gatsby
+.cache/
+public/
+
+# Node
+package.json
+package-lock.json

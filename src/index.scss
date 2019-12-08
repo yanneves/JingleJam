@@ -1,15 +1,15 @@
 @font-face {
-  font-family: 'Bebas Kai';
-  src: local('Bebas Kai Regular'), local('BebasKai'),
-      url('./fonts/BebasKai.woff2') format('woff2'),
-      url('./fonts/BebasKai.woff') format('woff');
+  font-family: "Bebas Kai";
+  src: local("Bebas Kai Regular"), local("BebasKai"),
+    url("./fonts/BebasKai.woff2") format("woff2"),
+    url("./fonts/BebasKai.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 body {
   margin: 0;
-  font-family: 'Bebas Kai';
+  font-family: "Bebas Kai", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   user-select: none;
@@ -38,7 +38,7 @@ a {
 .modal.loading {
   z-index: 2000;
   opacity: 1;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 .modal.loading.hidden {
   opacity: 0;
@@ -69,29 +69,23 @@ a {
 }
 
 .pinkLogo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: auto;
-  max-height: 200px;
-  max-width: 80vw;
-  width: auto;
+  width: 75vw;
+  max-height: 275px;
+  max-width: 800px;
   animation-name: logoLoading;
   animation-duration: 1.7s;
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  
 }
 
 @keyframes logoLoading {
   0% {
-    transform: translate(-50%, -50%) scale(1);
+    transform: scale(1);
   }
   50% {
-    transform: translate(-50%, -50%) scale(0.95);
+    transform: scale(0.95);
   }
   100% {
-    transform: translate(-50%, -50%) scale(1);
+    transform: scale(1);
   }
 }

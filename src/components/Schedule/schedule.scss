@@ -1,0 +1,658 @@
+$darkBlue: #081633;
+$blue: #13182e;
+$orange: #f04a1a;
+$paleBlue: #aab2d6;
+$streamBlueBg: #005491;
+$streamBlueBorder: #4593d1;
+$streamWhiteBlueText: #064372;
+$streamPinkBorder: #9a0a2e;
+$streamPinkPrim: rgba(166, 17, 59, 1);
+$streamPinkSec: rgba(220, 23, 79, 1);
+$twitch: #6441a5;
+$youtube: #c4302b;
+
+html,
+body {
+  background-color: $darkBlue;
+  font-size: 16px;
+  &.modal {
+    overflow: hidden;
+  }
+  .home {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    .donate {
+      position: fixed;
+      bottom: 10px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      z-index: 90;
+      background: $orange;
+      color: #ffffff;
+      box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+      height: 40px;
+      display: flex;
+      align-items: center;
+      font-size: 1.4rem;
+      padding: 0 25px;
+      border-radius: 20px;
+    }
+    .controls {
+      position: fixed;
+      pointer-events: none;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      article {
+        height: 50px;
+        width: 50px;
+        background: #ffffff;
+        font-size: 2rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        position: absolute;
+        transform: translate(0, -50%);
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+        pointer-events: auto;
+        cursor: pointer;
+        &.next {
+          right: 5px;
+        }
+        &.prev {
+          left: 5px;
+        }
+      }
+    }
+    header {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      padding: 0 25px;
+      margin: 25px 0;
+      .logo {
+        width: 220px;
+        height: 75px;
+      }
+      h1 {
+        color: $darkBlue;
+        background: #ffffff;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        font-size: 1.8rem;
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        padding: 5px 0;
+        span,
+        div {
+          display: none;
+        }
+      }
+    }
+    section.schedule {
+      width: 100%;
+      display: grid;
+      flex-grow: 1;
+      grid-template-columns: 55px repeat(7, calc(100% - 65px));
+      grid-template-rows: 55px repeat(8, minmax(80px, 1fr));
+      grid-gap: 10px;
+      position: relative;
+      overflow-x: auto;
+      overflow-y: visible;
+      box-sizing: border-box;
+      padding: 0 10px;
+      margin-bottom: 30px;
+      .liveTime {
+        position: absolute;
+        height: 3px;
+        width: 55px;
+        background: $orange;
+        opacity: 0;
+        z-index: 50;
+        &.active {
+          opacity: 1;
+        }
+      }
+      .time {
+        background: #ffffff;
+        grid-column: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+        h1 {
+          margin: 0;
+          transform: rotate(-90deg);
+          color: $paleBlue;
+          font-size: 1.5rem;
+        }
+        h3,
+        h4 {
+          margin: 5px 0;
+          font-size: 1.3rem;
+          color: $blue;
+        }
+      }
+      ._11 {
+        grid-row: 2;
+        grid-row-end: span 2;
+      }
+      ._12 {
+        grid-row: 3;
+      }
+      ._14 {
+        grid-row: 4;
+        grid-row-end: span 2;
+      }
+      ._15 {
+        grid-row: 5;
+      }
+      ._17 {
+        grid-row: 6;
+        grid-row-end: span 2;
+      }
+      ._18 {
+        grid-row: 7;
+      }
+      ._20 {
+        grid-row: 8;
+        grid-row-end: span 2;
+      }
+      ._21 {
+        grid-row: 9;
+      }
+      .day {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background: #ffffff;
+        color: $blue;
+        font-size: 1.4rem;
+
+        sub {
+          font-size: 1rem;
+          margin-top: 4px;
+        }
+        &.time {
+          font-size: 1rem;
+        }
+      }
+      ._1 {
+        grid-column: 2;
+      }
+      ._2 {
+        grid-column: 3;
+      }
+      ._3 {
+        grid-column: 4;
+      }
+      ._4 {
+        grid-column: 5;
+      }
+      ._5 {
+        grid-column: 6;
+      }
+      ._6 {
+        grid-column: 7;
+      }
+      ._0 {
+        grid-column: 8;
+      }
+      .stream {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        padding: 10px;
+        text-align: center;
+        h1 {
+          margin: 0;
+          font-size: 2rem;
+          line-height: 1.7rem;
+        }
+        h4,
+        h5 {
+          margin: 0;
+          margin-top: 15px;
+          font-size: 1.5rem;
+          line-height: 1.4rem;
+        }
+        h5 {
+          margin-top: 10px;
+        }
+        h3 {
+          font-size: 1.5rem;
+          line-height: 1.4rem;
+          margin: 0;
+          margin-bottom: 10px;
+        }
+        &.duration_0 {
+          display: none;
+        }
+        &.duration_half {
+          grid-row-end: span 1;
+        }
+        &.duration_1 {
+          grid-row-end: span 2;
+        }
+        &.duration_2 {
+          grid-row-end: span 4;
+        }
+        &.duration_3 {
+          grid-row-end: span 6;
+        }
+        &.duration_4 {
+          grid-row-end: span 8;
+        }
+        &.blue {
+          background: $streamBlueBg;
+          border: 4px solid $streamBlueBorder;
+          color: #ffffff;
+          h1,
+          h4,
+          h5,
+          h3 {
+            text-shadow: 0 0 7px #000000;
+          }
+        }
+        &.white {
+          background: #ffffff;
+          color: $streamWhiteBlueText;
+        }
+        &.pink {
+          border: 4px solid $streamPinkBorder;
+          color: #ffffff;
+          background: $streamPinkPrim;
+          background: linear-gradient(
+            0deg,
+            $streamPinkPrim 0%,
+            $streamPinkSec 100%
+          );
+          &.duration_4 {
+            background: $streamPinkPrim;
+            background: linear-gradient(
+              0deg,
+              $streamPinkPrim 0%,
+              $streamPinkSec 50%,
+              $streamPinkPrim 100%
+            );
+          }
+          h1,
+          h4,
+          h5,
+          h3 {
+            text-shadow: 0 0 7px #000000;
+          }
+        }
+      }
+    }
+  }
+  .expanded {
+    position: absolute;
+    z-index: 100%;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    .close {
+      position: absolute;
+      height: 30px;
+      width: 30px;
+      display: flex;
+      align-items: center;
+      border-radius: 50%;
+      box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+      justify-content: center;
+      top: 15px;
+      right: 15px;
+    }
+    .blue > .close {
+      background: #ffffff;
+      color: $streamBlueBg;
+    }
+    .pink > .close {
+      background: #ffffff;
+      color: $streamPinkPrim;
+    }
+    .white > .close {
+      background: $streamWhiteBlueText;
+      color: #ffffff;
+    }
+    .bg {
+      display: none;
+    }
+    .content {
+      width: 100%;
+      min-height: 100%;
+      position: absolute;
+      z-index: 101;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      &.blue {
+        background: $streamBlueBg;
+        border: 4px solid $streamBlueBorder;
+        color: #ffffff;
+      }
+      &.pink {
+        border: 4px solid $streamPinkBorder;
+        color: #ffffff;
+        background: $streamPinkPrim;
+        background: linear-gradient(
+          0deg,
+          $streamPinkPrim 0%,
+          $streamPinkSec 50%,
+          $streamPinkPrim 100%
+        );
+      }
+      &.white {
+        background: #ffffff;
+        color: $streamWhiteBlueText;
+      }
+      .profile {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 15px;
+      }
+      .details {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 15px;
+        margin-top: 30px;
+        .watched {
+          height: 25px;
+          width: 25px;
+          border: 1px solid #ffffff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 0.9rem;
+          position: relative;
+          margin-top: 15px;
+          border-radius: calc(25px / 2);
+          cursor: pointer;
+          box-sizing: border-box;
+          svg {
+            padding-top: 1px;
+            padding-left: 2px;
+          }
+          &::after {
+            position: absolute;
+            content: "Add to watched list";
+            font-size: 1rem;
+            margin-left: 3px;
+            white-space: nowrap;
+            padding: 5px 10px;
+            left: calc(100% + 10px);
+            top: 50%;
+            transform: translate(0, -50%);
+            pointer-events: none;
+            opacity: 0;
+          }
+          &::before {
+            content: "";
+            height: 10px;
+            width: 10px;
+            position: absolute;
+            left: calc(100% + 11px);
+            top: 50%;
+            transform: translate(0, -50%) rotate(45deg);
+            pointer-events: none;
+            opacity: 0;
+          }
+
+          &.filled {
+            &::after {
+              content: "Remove from watched list";
+            }
+          }
+
+          &:hover {
+            &::before,
+            &::after {
+              opacity: 1;
+            }
+          }
+        }
+        h1 {
+          font-size: 4rem;
+          margin: 0;
+          line-height: 3.5rem;
+          margin-bottom: 20px;
+        }
+        h3,
+        h4,
+        h5 {
+          font-size: 2rem;
+          margin: 0;
+          line-height: 1.8rem;
+        }
+        .starring {
+          height: 50px;
+          width: 100%;
+          overflow-x: auto;
+          position: relative;
+          margin-top: 25px;
+          display: flex;
+          flex-direction: row;
+          overflow-y: hidden;
+          .yog {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            flex-shrink: 0;
+            margin: 0 5px;
+            position: relative;
+            img {
+              height: 100%;
+              width: 100%;
+              border-radius: 50%;
+            }
+            .tooltip {
+              display: none;
+            }
+          }
+        }
+      }
+      &.white .details .watched {
+        color: $streamWhiteBlueText;
+        border-color: $streamWhiteBlueText;
+        &::after,
+        &::before,
+        &.filled {
+          background: $streamWhiteBlueText;
+          color: #ffffff;
+        }
+      }
+      &.blue .details .watched {
+        &::after,
+        &::before,
+        &.filled {
+          background: #ffffff;
+          color: $streamBlueBg;
+        }
+      }
+      &.pink .details .watched {
+        color: #ffffff;
+        border-color: #ffffff;
+        &::before,
+        &::after,
+        &.filled {
+          background: #ffffff;
+          color: $streamPinkPrim;
+        }
+      }
+      &.white .details .starring .yog {
+        background: rgba(0, 0, 0, 0.1);
+      }
+      .vods {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 15px;
+        .countdown {
+          margin-bottom: 25px;
+          h2 {
+            margin: 0;
+            line-height: 1.5rem;
+            font-size: 2rem;
+          }
+          h1 {
+            margin: 0;
+            font-size: 4rem;
+            line-height: 4rem;
+            span {
+              position: relative;
+              &::after {
+                content: attr(data-tooltip);
+                font-size: 1rem;
+                position: absolute;
+                height: 20px;
+                padding: 0 10px;
+                top: calc(100% - 5px);
+                line-height: 1rem;
+                left: 50%;
+                transform: translate(-50%, 0);
+              }
+            }
+          }
+        }
+        .iframe_container {
+          width: 550px;
+          height: calc((550px / 16) * 9);
+          display: none;
+        }
+        .live {
+          display: flex;
+          flex-direction: column-reverse;
+          width: 100%;
+          h1 {
+            display: none;
+          }
+          .watch {
+            height: 50px;
+            background: $twitch;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            svg {
+              margin-left: 5px;
+            }
+          }
+        }
+        .novods {
+          font-size: 1.5rem;
+          text-align: center;
+        }
+        .allvods {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            width: 100%;
+            &.toggle {
+              display: none;
+            }
+            li {
+              display: flex;
+              height: 50px;
+              width: 100%;
+              align-items: center;
+              justify-content: center;
+              padding: 0;
+              margin: 0;
+              font-size: 1.5rem;
+              color: #ffffff;
+              margin-bottom: 10px;
+              svg {
+                margin-left: 5px;
+              }
+              &.twitch {
+                background: $twitch;
+              }
+              &.youtube {
+                background: $youtube;
+              }
+            }
+          }
+        }
+      }
+      &.pink {
+        .vods .allvods ul li.youtube {
+          background: #ffffff;
+          color: $youtube;
+        }
+      }
+    }
+  }
+}
+
+.detailTitle {
+  a {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    border-radius: 50%;
+    &.facebook {
+      background: #3b5998;
+      color: #ffffff;
+    }
+    &.twitter {
+      background: #55acee;
+      color: #ffffff;
+    }
+    &.youtube {
+      background: $youtube;
+      color: #ffffff;
+    }
+    &.twitch {
+      background: $twitch;
+      color: #ffffff;
+    }
+    &.reddit {
+      background: #ff5700;
+      color: #ffffff;
+    }
+  }
+}

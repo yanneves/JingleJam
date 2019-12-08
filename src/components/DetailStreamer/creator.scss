@@ -1,0 +1,91 @@
+.creatorDetails {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 50px;
+  img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+    margin-top: 15px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 25px;
+    li {
+      width: 100%;
+      height: 40px;
+      font-size: 1rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0;
+      svg {
+        margin-left: 5px;
+      }
+      &.twitter {
+        background: #55acee;
+        color: #ffffff;
+      }
+      &.youtube {
+        background: #c4302b;
+        color: #ffffff;
+      }
+      &.twitch {
+        background: #6441a5;
+        color: #ffffff;
+      }
+    }
+  }
+  .back {
+    position: absolute;
+    left: 10px;
+    top: -30px;
+    height: 30px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+}
+
+.pink .creatorDetails {
+  ul li.youtube {
+    background: #ffffff;
+    color: #c4302b;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .creatorDetails ul li {
+    font-size: 1.2rem;
+  }
+  .creatorDetails .back {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .creatorDetails {
+    width: 50%;
+    margin: 0;
+    .back {
+      top: 15px;
+    }
+  }
+}
